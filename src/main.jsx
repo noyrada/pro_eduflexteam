@@ -6,10 +6,10 @@ import './index.css';
 
 // views
 import HomePage from './views/HomePage.jsx';
-//import Login from './views/auth/Login.jsx';
 
 // layouts
 import Auth from './layouts/Auth.jsx';
+import Admin from './layouts/Admin.jsx';
 
 // Create a root for rendering
 const root = createRoot(document.getElementById('root'));
@@ -17,7 +17,8 @@ root.render(
   <BrowserRouter>
     <Routes>
       {/* Route for layouts */}
-      <Route path="/auth/*" element={<Auth />} />
+      <Route path='/auth/*' element={<Auth />} />
+      <Route path='/admin/*' element={<Admin />} />
 
       {/* Route for without layouts */}
       <Route path="/" element={<HomePage />} />
