@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 // component
 import AdminNavbar from '../components/Navbars/AdminNavbar.jsx';
 import Sidebar from "../components/Sidebar/Sidbar";
+import Content from "../components/Content/Contents.jsx";
 
 // views
 import Dashboard from "../views/admin/Dashboard";
@@ -14,6 +15,8 @@ export default function Admin() {
             <Sidebar />
             <div className="relative md:ml-64 bg-gray-100">
             <AdminNavbar />
+             {/* Content */}
+            <Content />
                 <div className="px-4 md:px-10 mx-auto w-full -m-24">
                     <Routes>
                         {/* Route for login */}
