@@ -13,7 +13,7 @@ export default function CardStats({
 }) {
     return (
         <>
-            <div className="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+            <div className="relative flex flex-col min-w-0 break-words bg-gray-200 mb-6 shadow-lg">
                 <div className="flex-auto p-2">
                     <div className="flex flex-wrap">
                         <div className="relative w-full pr-4 max-w-full flex-grow flex-1">
@@ -27,7 +27,7 @@ export default function CardStats({
                         <div className="relative w-auto pl-4 flex-initial">
                             <div
                                 className={
-                                    "text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full " +
+                                    "text-white p-3 text-center inline-flex items-center shadow-lg rounded-full " +
                                     statIconColor
                                 }
                             >
@@ -46,7 +46,7 @@ export default function CardStats({
                                             : ""
                                 }
                             ></i>{" "}
-                            {statPercent}%
+                            {statPercent}
                         </span>
                         <span className="whitespace-nowrap">{statDescription}</span>  {/* Corrected this line */}
                     </p>
@@ -55,25 +55,3 @@ export default function CardStats({
         </>
     );
 }
-
-CardStats.defaultProps = {
-    statSubtitle: "Traffic",
-    statTitle: "350,897",
-    statArrow: "up",
-    statPercent: "3.48",
-    statPercentColor: "text-emerald-500",
-    statDescription: "Since last month",
-    statIconName: "far fa-chart-bar",
-    statIconColor: "bg-red-500",
-};
-
-CardStats.propTypes = {
-    statSubtitle: PropTypes.string,
-    statTitle: PropTypes.string,
-    statArrow: PropTypes.oneOf(["up", "down"]),
-    statPercent: PropTypes.string,
-    statPercentColor: PropTypes.string,
-    statDescription: PropTypes.string,
-    statIconName: PropTypes.string,
-    statIconColor: PropTypes.string,
-};
