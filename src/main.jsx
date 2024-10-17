@@ -24,7 +24,7 @@ root.render(
       <Route path="/" element={<HomePage />} />
 
       {/* Redirect to the home page */}
-      <Route path="*" element={<Navigate to="/" />} />
+      <Route path="/" element={<Navigate to="/" />} />
     </Routes>
   </BrowserRouter>
 );

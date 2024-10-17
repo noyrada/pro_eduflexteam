@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 // component
 import AdminNavbar from '../components/Navbars/AdminNavbar.jsx';
 import Sidebar from "../components/Sidebar/Sidbar";
+import FooterAdmin from "../components/Footer/FooterAdmin.jsx";
 
 // views
 import Dashboard from "../views/admin/Dashboard";
@@ -18,7 +19,7 @@ export default function Admin() {
                 </div>
 
                 {/* Header */} 
-                <div className="col-span-5 h-16" >
+                <div className="col-span-5 h-20" >
                     <AdminNavbar />
                 </div>
 
@@ -34,8 +35,8 @@ export default function Admin() {
                 </div>
 
                 {/* Footer */} 
-                <div className="col-span-5 bg-gray-300 p-4 h-16 mt-6">
-                    <h1>Footer</h1>
+                <div className="col-span-5 p-4 h-16 mt-6">
+                    <FooterAdmin/>
                 </div>
             </div>
         </>
