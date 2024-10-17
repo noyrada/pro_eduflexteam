@@ -88,7 +88,7 @@ export default function Sidebar() {
                             <ul>
                                 <li className="mb-5">
                                     <NavLink
-                                        to="/admin"
+                                        to="/admin/dashboard"
                                         className={({ isActive }) =>
                                             isActive
                                                 ? "text-xl text-white bg-blue-600 pl-3 p-2 rounded-md block"
@@ -107,7 +107,7 @@ export default function Sidebar() {
                                 </li>
                                 <li className="mb-5">
                                     <NavLink
-                                        to="/"
+                                        to="/admin/courses"
                                         className={({ isActive }) =>
                                             isActive
                                                 ? "text-xl text-white p-2 pl-3  bg-blue-600  rounded-md block "
@@ -170,4 +170,3 @@ export default function Sidebar() {
         </>
     );
 }
-

@@ -8,6 +8,7 @@ import FooterAdmin from "../components/Footer/FooterAdmin.jsx";
 
 // views
 import Dashboard from "../views/admin/Dashboard";
+import Courses from "../views/admin/Courses.jsx";
 
 export default function Admin() {
     return (
@@ -28,6 +29,7 @@ export default function Admin() {
                     <Routes>
                         {/* Route for login */}
                         <Route path="/dashboard" element={<Dashboard />} />
+                        <Route path="/courses" element={<Courses/>} />
 
                         {/* Redirect from /admin to /admin/dashboard */}
                         <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />
