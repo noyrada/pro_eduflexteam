@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function CardStats() {
+export default function CardLineChart() {
     return (
         <>
             <div>
-                <h1>This is CardStats.</h1>
+                <h1>This Card LineChart</h1>
             </div>
         </>
-    );
+    )
 }
