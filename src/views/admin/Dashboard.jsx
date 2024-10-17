@@ -10,9 +10,9 @@ import CardLastActivity from "../../components/Cards/CardLastActivity";
 export default function Dashboard() {
   return (
     <>
-      <div className="grid grid-cols-4 gap-4 mx-8 pt-0 h-screen">
+      <div className="grid grid-cols-4 gap-5 mx-8 pt-0">
         {/* Card Stats */}
-        <div className="col-span-3 bg-white shadow-md h-36">
+        <div className="col-span-3 bg-white shadow-sm rounded-sm h-36">
           <CardStats/>
         </div>
 
@@ -22,12 +22,12 @@ export default function Dashboard() {
         </div>
 
         {/* Card LineChart */}
-        <div className="col-span-3 bg-white shadow-sm rounded-sm h-96">
+        <div className="col-span-3 bg-white shadow-sm rounded-sm h-100">
           <CardLineChart/>
         </div>
 
         {/* Card Courses */}
-        <div className="col-span-4 bg-white shadow-sm rounded-sm h-80">
+        <div className="col-span-4 bg-white shadow-sm rounded-sm h-83">
           <CardCourses/>
         </div>
       </div>
