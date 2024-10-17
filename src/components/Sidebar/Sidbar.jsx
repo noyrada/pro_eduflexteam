@@ -37,95 +37,115 @@ export default function Sidebar() {
             <li className="inline-block relative"></li>
             <li className="inline-block relative"></li>
           </ul>
-           {/* Collapse */}
+          {/* Collapse */}
           <div
             className={
               "md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded " +
               collapseShow
             }
           >
-            {/* Collapse header */}
-            <div className="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-blueGray-200">
-              <div className="flex flex-wrap">
-                <div className="w-6/12">
-                  <Link
-                    className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm font-bold p-4 px-0"
-                    to="/"
-                  >
-                    <img
-                      src={logo}
-                      width="100px"
-                      className="absolute left-0  top-1 md:hidden block  "
-                      alt="logo"
-                    />
-                    <span className="ml-16 md:text-2xl text-xl text-blue-950 ">
+            {/* Collapse */}
+            <div
+              className={
+                "md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded " +
+                collapseShow
+              }
+            >
+              {/* Collapse header */}
+              <div className="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-blueGray-200">
+                <div className="flex flex-wrap">
+                  <div className="w-6/12">
+                    <Link
+                      className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
+                      to="/"
+                    >
                       EduFlex
-                    </span>
-                  </Link>
+                    </Link>
+                  </div>
+                  <div className="w-6/12 flex justify-end">
+                    <button
+                      type="button"
+                      className="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
+                      onClick={() => setCollapseShow("hidden")}
+                    >
+                      <i className="fas fa-times"></i>
+                    </button>
+                  </div>
                 </div>
-                <div className="w-6/12 flex justify-end">
-                  <button
-                    type="button"
-                    className="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
-                    onClick={() => setCollapseShow("hidden")}
+              </div>
+
+              {/* Form */}
+              <form className="mt-6 mb-4 md:hidden">
+                <div className="mb-3 pt-0">
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    className="px-3 py-2 h-12 border border-solid  border-blueGray-500 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
+                  />
+                </div>
+              </form>
+
+              <ul>
+                <li className="mb-5">
+                  <NavLink
+                    to="/admin"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-xl text-white bg-blue-600 pl-3 p-2 rounded-md block"
+                        : "pl-3 p-2 text-gray-700 text-xl"
+                    }
                   >
-                    <i className="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
+                    <span className=" md:mr-2 text-2xl">
+                      {" "}
+                      <ion-icon name="grid-outline"></ion-icon>{" "}
+                    </span>{" "}
+                    <span className=" absolute left-[14%] md:left-12  ">
+                      {" "}
+                      Dashboard
+                    </span>
+                  </NavLink>
+                </li>
+                <li className="mb-5">
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-xl text-white p-2 pl-3  bg-blue-600  rounded-md block "
+                        : "p-2 pl-3 text-gray-700 text-xl"
+                    }
+                  >
+                    <span className=" md:mr-2 text-2xl">
+                      <ion-icon name="newspaper-outline"></ion-icon>
+                    </span>{" "}
+                    <span className=" absolute left-[14%] md:left-12">
+                      Courses
+                    </span>
+                  </NavLink>
+                </li>
+
+                {/* Reports */}
+                <li className="items-center">
+                  <Link className="" to="">
+                    <i className=""></i> Users
+                  </Link>
+                </li>
+                {/* Reports */}
+                <li className="items-center">
+                  <Link className="" to="">
+                    <i className=""></i> Reports
+                  </Link>
+                </li>
+                {/* Settings */}
+                <li className="items-center">
+                  <Link className="" to="">
+                    <i className=""></i> Settings
+                  </Link>
+                </li>
+              </ul>
             </div>
-
-            {/* Form */}
-            <form className="mt-6 mb-4 md:hidden">
-              <div className="mb-3 pt-0">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  className="px-3 py-2 h-12 border border-solid  border-blueGray-500 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
-                />
-              </div>
-            </form>
-
-                        <ul className="md:flex-col md:min-w-full flex flex-col list-none">
-                            {/* Reports */}
-                            <li className="items-center">
-                                <Link
-                                    className="" to="">
-                                    <i className=""></i>{" "}
-                                    Dashboard
-                                </Link>
-                            </li>
-
-                            {/* Reports */}
-                            <li className="items-center">
-                                <Link
-                                    className="" to="">
-                                    <i className=""></i>{" "}
-                                    Users
-                                </Link>
-                            </li>
-                            {/* Reports */}
-                            <li className="items-center">
-                                <Link
-                                    className="" to="">
-                                    <i className=""></i>{" "}
-                                    Reports
-                                </Link>
-                            </li>
-                            {/* Settings */}
-                            <li className="items-center">
-                                <Link
-                                    className=""
-                                    to="">
-                                    <i className=""></i>{" "}
-                                    Settings
-                                </Link>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
-        </>
-    )
+          </div>
+        </div>
+      </nav>
+    </>
+  );
 }
