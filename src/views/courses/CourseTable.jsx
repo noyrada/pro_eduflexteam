@@ -2,6 +2,7 @@ import React from "react";
 
 // components
 import CardToolBar from "../../components/Cards/Courses/CardToolBar";
+import CardTable from "../../components/Cards/Courses/CardTable";
 
 export default function CourseTable() {
     return (
@@ -9,7 +10,7 @@ export default function CourseTable() {
             <div className="grid grid-rows-[auto,auto,1fr] mx-8">
                 {/* Breadcrumb */}
                 <div className="bg-gray-200 p-4 shadow-sm">
-                    <p>Home &gt; Course</p>
+                    <p>Home &gt; Course &gt; Table</p>
                 </div>
 
                 {/* Tool Bar */}
@@ -20,7 +21,7 @@ export default function CourseTable() {
                 {/* Content Area with Cards */}
                 <div className="bg-white shadow-md rounded-md mt-2 h-screen">
                     <div className="">
-                        <h1>Courses Table</h1>
+                        <CardTable/>
                     </div>
                 </div>
             </div>
