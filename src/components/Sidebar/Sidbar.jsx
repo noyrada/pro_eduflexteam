@@ -18,84 +18,39 @@ export default function Sidebar() {
                     >
                         <i className="fas fa-bars"></i>
                     </button>
+
                     {/* Brand */}
-                    <Link
-                        className="md:block  md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm  font-bold py-4  md:pt-5  px-0"
-                        to="/"
-                    >
-                        <img
-                            src={logo}
-                            className="md:w-[100px] w-[100px] left-1/3 -top-1.5 sm:left-[37%] sm:-top-1.5  absolute md:left-0  md:-top-1    "
-                            alt="logo"
-                        />{" "}
-                        <span className="md:ml-16 md:text-xl sm:ml-8 ml-7 text-xl text-blue-950 ">
-                            EduFlex
-                        </span>
-                    </Link>
-                    {/* User */}
-                    <ul className="md:hidden items-center flex flex-wrap list-none">
-                        <li className="inline-block relative"></li>
-                        <li className="inline-block relative"></li>
-                    </ul>
-                    {/* Collapse */}
+                    <div className="flex items-center">
+                        <Link className="inline-flex items-center" to="/">
+                            <img
+                                src={logo}
+                                className="w-[100px]"
+                                alt="logo"
+                            />
+                            <span className="text-xl text-blue-950 font-bold">
+                                EduFlex
+                            </span>
+                        </Link>
+                    </div>
+                    
+                    {/* menu */}
                     <div
                         className={
-                            "md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded " +
-                            collapseShow
+                            "md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded " +collapseShow
                         }
                     >
-                        {/* Collapse */}
-                        <div
-                            className={
-                                "md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded " +
-                                collapseShow
-                            }
-                        >
-                            {/* Collapse header */}
-                            <div className="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-blueGray-200">
-                                <div className="flex flex-wrap">
-                                    <div className="w-6/12">
-                                        <Link
-                                            className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
-                                            to="/"
-                                        >
-                                            EduFlex
-                                        </Link>
-                                    </div>
-                                    <div className="w-6/12 flex justify-end">
-                                        <button
-                                            type="button"
-                                            className="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
-                                            onClick={() => setCollapseShow("hidden")}
-                                        >
-                                            <i className="fas fa-times"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Form */}
-                            <form className="mt-6 mb-4 md:hidden">
-                                <div className="mb-3 pt-0">
-                                    <input
-                                        type="text"
-                                        placeholder="Search"
-                                        className="px-3 py-2 h-12 border border-solid  border-blueGray-500 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
-                                    />
-                                </div>
-                            </form>
-
+                        <div className="mt-2">
                             <ul>
-                                <li className="mb-5">
+                                <li className="mb-3">
                                     <NavLink
                                         to="/admin/dashboard"
                                         className={({ isActive }) =>
                                             isActive
-                                                ? "text-xl text-white bg-blue-600 pl-3 p-2 rounded-md block"
-                                                : "pl-3 p-2 text-gray-700 text-xl"
+                                                ? " text-white bg-blue-600 px-2 p-2 rounded-lg block"
+                                                : "px-2 p-2 text-gray-700"
                                         }
                                     >
-                                        <span className=" md:mr-2 text-2xl">
+                                        <span className=" md:mr-2 text-xl">
                                             {" "}
                                             <ion-icon name="grid-outline"></ion-icon>{" "}
                                         </span>{" "}
@@ -105,16 +60,16 @@ export default function Sidebar() {
                                         </span>
                                     </NavLink>
                                 </li>
-                                <li className="mb-5">
+                                <li className="mb-3">
                                     <NavLink
                                         to="/admin/courses"
                                         className={({ isActive }) =>
                                             isActive
-                                                ? "text-xl text-white p-2 pl-3  bg-blue-600  rounded-md block "
-                                                : "p-2 pl-3 text-gray-700 text-xl"
+                                                ? " text-white px-2 p-2 rounded-lg  bg-blue-600 block "
+                                                : "px-2 p-2 text-gray-700"
                                         }
                                     >
-                                        <span className=" md:mr-2 text-2xl">
+                                        <span className=" md:mr-2 text-xl">
                                             <ion-icon name="newspaper-outline"></ion-icon>
                                         </span>{" "}
                                         <span className=" absolute left-[14%] md:left-12">
@@ -124,42 +79,55 @@ export default function Sidebar() {
                                 </li>
 
                                 {/* Users */}
-                                <li className="mb-5">
+                                <li className="mb-3">
                                     <NavLink
                                         to="/"
                                         className={({ isActive }) =>
                                             isActive
-                                                ? "text-xl text-white p-2 pl-3  bg-blue-600  rounded-md block "
-                                                : "p-2  pl-3 text-gray-700 text-xl"
+                                                ? " text-white px-2 p-2  bg-blue-600  rounded-lg block "
+                                                : "px-2 p-2 text-gray-700"
                                         }>
-                                        <span className=" md:mr-2 text-2xl"><ion-icon name="person-outline"></ion-icon></span> <span className=" absolute left-[14%] md:left-12 ">Users</span>
+                                        <span className=" md:mr-2 text-xl">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                        </span>
+                                        <span className=" absolute left-[14%] md:left-12 ">
+                                            Users
+                                        </span>
                                     </NavLink>
                                 </li>
 
                                 {/* Reports */}
-                                <li className="mb-5">
+                                <li className="mb-3">
                                     <NavLink
                                         to="/"
                                         className={({ isActive }) =>
                                             isActive
-                                                ? "text-xl text-white p-2 pl-3  bg-blue-600  rounded-md block "
-                                                : "p-2  pl-3 text-gray-700 text-xl"
+                                                ? " text-white px-2 p-2  bg-blue-600  rounded-lg block "
+                                                : "px-2 p-2 text-gray-700"
                                         }>
-                                        <span className=" md:mr-2 text-2xl"><ion-icon name="pie-chart-outline"></ion-icon></span><span className=" absolute left-[14%] md:left-12">Reports</span>
+                                        <span className=" md:mr-2 text-xl">
+                                            <ion-icon name="pie-chart-outline"></ion-icon>
+                                        </span><span className=" absolute left-[14%] md:left-12">
+                                            Reports
+                                        </span>
                                     </NavLink>
                                 </li>
 
                                 {/* Settings */}
-                                <li>
+                                <li className="mb-3">
                                     <NavLink
                                         to="/"
                                         className={({ isActive }) =>
                                             isActive
-                                                ? "text-xl text-white p-2 pl-3  bg-blue-600  rounded-md block "
-                                                : "p-2  pl-3 text-gray-700  text-xl"
+                                                ? " text-white px-2 p-2  bg-blue-600  rounded-lg block "
+                                                : "px-2 p-2 text-gray-700"
                                         }>
 
-                                        <span className=" md:mr-2 text-2xl"> <ion-icon name="settings-outline"  ></ion-icon></span> <span className=" absolute left-[14%] md:left-12"> Settings</span>
+                                        <span className=" md:mr-2 text-xl">
+                                            <ion-icon name="settings-outline"  ></ion-icon>
+                                        </span> <span className=" absolute left-[14%] md:left-12">
+                                            Settings
+                                        </span>
                                     </NavLink>
                                 </li>
                             </ul>
