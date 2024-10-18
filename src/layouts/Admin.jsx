@@ -12,6 +12,7 @@ import Courses from "../views/admin/Courses.jsx";
 import CourseTable from "../views/courses/CourseTable.jsx";
 import CourseAssign from '../views/courses/CourseAssign.jsx';
 import CourseEvent from '../views/courses/CourseEvent.jsx'
+import Users from "../views/admin/Users.jsx";
 
 export default function Admin() {
     return (
@@ -38,6 +39,10 @@ export default function Admin() {
                         <Route path="/courses-table" element={< CourseTable/>} />
                         <Route path="/courses-assign" element={< CourseAssign/>} />
                         <Route path="/courses-event" element={< CourseEvent/>} />
+
+                        {/* Route for users */}
+                        <Route path="/users" element={<Users/>} />
+                        <Route path="/users-roles" element={<Users/>}/>
 
                         {/* Redirect from /admin to /admin/dashboard */}
                         <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />
