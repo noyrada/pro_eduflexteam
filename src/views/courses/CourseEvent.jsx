@@ -2,6 +2,7 @@ import React from "react";
 
 // components
 import CardToolBar from "../../components/Cards/Courses/CardToolBar";
+import CardEvents from "../../components/Cards/Courses/CardEvents";
 
 export default function CourseAssign() {
     return (
@@ -9,7 +10,7 @@ export default function CourseAssign() {
             <div className="grid grid-rows-[auto,auto,1fr] mx-8">
                 {/* Breadcrumb */}
                 <div className="bg-gray-200 p-4 shadow-sm">
-                    <p>Home &gt; Course</p>
+                    <p>Home &gt; Course &gt; Events</p>
                 </div>
 
                 {/* Tool Bar */}
@@ -20,7 +21,7 @@ export default function CourseAssign() {
                 {/* Content Area with Cards */}
                 <div className="bg-white shadow-md rounded-md mt-2 h-screen">
                     <div className="">
-                        <h1>Courses Events</h1>
+                        <CardEvents/>
                     </div>
                 </div>
             </div>
