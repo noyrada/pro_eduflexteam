@@ -81,7 +81,7 @@ export default function Sidebar() {
                                 {/* Users */}
                                 <li className="mb-3">
                                     <NavLink
-                                        to="/"
+                                        to="/admin/users"
                                         className={({ isActive }) =>
                                             isActive
                                                 ? " text-white px-2 p-2  bg-blue-600  rounded-lg block "
