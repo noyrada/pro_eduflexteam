@@ -1,6 +1,7 @@
 import React from "react";
 
 // component
+import CardToolBar from "../../components/Cards/Courses/CardToolBar";
 
 export default function Courses() {
     return (
@@ -12,12 +13,12 @@ export default function Courses() {
                 </div>
 
                 {/* Tool Bar */}
-                <div className="bg-blue-200 p-4 shadow-sm">
-                    <p>Tool Bar</p>
+                <div className=" shadow-sm">
+                    <CardToolBar/>
                 </div>
 
                 {/* Content Area with Cards */}
-                <div className="bg-white shadow-md rounded-md mt-2 h-screen">
+                <div className="bg-white shadow-md rounded-md mt-2">
                     <div className="grid grid-cols-3 gap-6 p-5">
                         {/* Card 1 */}
                         <div className="bg-gray-200 rounded-md h-96 p-3">
