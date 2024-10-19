@@ -43,23 +43,23 @@ const activities = [
 export default function CardLastActivity() {
   return (
     <>
-      <div className="p-4">
-        <h3 className="text-lg font-bold">Last Activity</h3>
-        <p className="text-gray-600 mb-6">Last 30 day</p>
-        <div className="space-y-4">
+      <div className="ml-2 mt-2">
+        <div className="font-bold text-sm">Last Activity</div>
+        <p className="text-gray-600 mb-3">Last 30 day</p>
+        <div className="space-y-2">
           {activities.map((activity) => (
-            <div key={activity.id} className="flex items-center space-x-4">
+            <div key={activity.id} className="flex items-center space-x-1">
               <img
                 src={activity.icon}
                 alt="Activity Icon"
-                className="w-14 h-14 rounded-full object-cover"
+                className="w-12 h-12 rounded-full object-cover mr-2"
               />
               <div className="flex-1">
-                <h4 className="text-lg font-semibold">{activity.title}</h4>
-                <p className="text-gray-600 text-base">
+                <h3 className="font-semibold">{activity.title}</h3>
+                <p className="text-gray-600 text-sm">
                   {activity.description}
                 </p>
-                <span className="text-gray-500 text-base">{activity.date}</span>
+                <span className="text-gray-500 text-sm">{activity.date}</span>
               </div>
             </div>
           ))}
