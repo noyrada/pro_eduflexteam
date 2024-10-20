@@ -32,7 +32,7 @@ export default function Dashboard() {
         </div>
 
         {/* Card Courses */}
-        <div className="col-span-4 bg-white shadow-sm rounded-sm max-h-max">
+        <div className="col-span-4 bg-white shadow-md rounded-sm max-h-max">
           <CardCourses />
         </div>
       </div>
