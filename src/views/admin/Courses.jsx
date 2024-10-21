@@ -2,6 +2,7 @@ import React from "react";
 
 // component
 import CardToolBar from "../../components/Cards/Courses/CardToolBar";
+import PaginationCourse from "../../components/Paginations/PaginationCourse";
 
 export default function Courses() {
     return (
@@ -14,7 +15,7 @@ export default function Courses() {
 
                 {/* Tool Bar */}
                 <div className=" shadow-sm">
-                    <CardToolBar/>
+                    <CardToolBar />
                 </div>
 
                 {/* Content Area with Cards */}
@@ -49,6 +50,13 @@ export default function Courses() {
                         <div className="bg-gray-200 rounded-md h-96 p-3">
                             {/* Content of the card goes here */}
                         </div>
+                    </div>
+                </div>
+
+                {/* Pagination */}
+                <div className="flex justify-center items-center mt-2 w-full">
+                    <div className="flex items-center gap-2 p-2 bg-white shadow-sm rounded-lg border border-gray-200">
+                        <PaginationCourse />
                     </div>
                 </div>
             </div>

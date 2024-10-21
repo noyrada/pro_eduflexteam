@@ -50,7 +50,7 @@ export default function Admin() {
                 </div>
 
                 {/* Footer */} 
-                <div className="col-span-5 row-span-2 p-4 h-16 mt-8">
+                <div className="col-span-5 row-span-2 p-4 h-16 mt-6">
                     <FooterAdmin/>
                 </div>
             </div>
