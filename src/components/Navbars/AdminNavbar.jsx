@@ -9,19 +9,19 @@ export default function Navbar() {
     return (
         <>
             {/* Navbar */}
-            <nav className="flex top-0 left-0 w-full z-10 bg-blue-600 items-center justify-between p-3 shadow-[0_5px_10px_rgba(0,0,0,0.3)]">
-                <div className="w-full mx-auto items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4">
+            <nav className="flex z-10 top-0 start-0 shadow-xl bg-white items-center p-2 justify-between ml-[3px]">
+                <div className="w-full mx-auto items-center flex justify-between md:flex-nowrap flex-wrap md:px-10">
 
                     {/* Form */}
                     <form className="flex-grow flex justify-center">
-                        <div className="relative flex w-full max-w-md">
-                            <span className="z-10 h-full leading-snug font-normal text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                        <div className=" flex w-80 bg-white rounded-2xl">
+                            <span className="z-10 h-full leading-snug font-normal text-center text-gray-600 absolute text-base items-center justify-center w-8 pl-3 py-2">
                                 <i className="fas fa-search"></i>
                             </span>
                             <input
                                 type="text"
                                 placeholder="Search your course..."
-                                className="border-0 px-2 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-white rounded text-sm shadow outline-none focus:outline-none focus:ring w-full pl-10"
+                                className="border-gray-300 px-2 py-2 placeholder-blueGray-300 text-gray-600 relative bg-white rounded text-sm shadow outline-none focus:outline-none w-full pl-10"
                             />
                         </div>
                     </form>
@@ -34,14 +34,14 @@ export default function Navbar() {
                                 <img
                                     src={Flag}
                                     alt="flag"
-                                    className="h-7 w-7 rounded-full border"
+                                    className="h-6 w-6 rounded-full border"
                                 />
                             </button>
                         </li>
                         {/* Bell icon */}
                         <li>
-                            <button className="cursor-pointer text-white p-0">
-                                <Bell className="h-7 w-7" />
+                            <button className="cursor-pointer text-gray-600 p-1">
+                                <Bell className="h-6 w-6" />
                             </button>
                         </li>
 
@@ -50,16 +50,16 @@ export default function Navbar() {
                             <button className="cursor-pointer text-white p-0">
                                 <img
                                     src={User}
-                                    alt="flag"
-                                    className="h-7 w-7 rounded-full border"
+                                    alt="user"
+                                    className="h-10 w-10 rounded-full border"
                                 />
                             </button>
                         </li>
 
                         {/* <UserDropdown /> */}
                         <li>
-                            <button className="cursor-pointer text-white p-1 mr-2">
-                                <ChevronDown className="h-7 w-7" />
+                            <button className="cursor-pointer text-gray-600 p-1">
+                                <ChevronDown className="h-6 w-6" />
                             </button>
                         </li>
                     </ul>
