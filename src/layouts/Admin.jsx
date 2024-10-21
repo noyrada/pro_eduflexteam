@@ -24,7 +24,7 @@ export default function Admin() {
                 </div>
 
                 {/* Header */} 
-                <div className="col-span-5" >
+                <div className="col-span-5 h-20" >
                     <AdminNavbar />
                 </div>
 
