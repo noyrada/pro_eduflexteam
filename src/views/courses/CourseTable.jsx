@@ -3,6 +3,7 @@ import React from "react";
 // components
 import CardToolBar from "../../components/Cards/Courses/CardToolBar";
 import CardTable from "../../components/Cards/Courses/CardTable";
+import PaginationCourse from "../../components/Paginations/PaginationCourse";
 
 export default function CourseTable() {
     return (
@@ -15,14 +16,21 @@ export default function CourseTable() {
 
                 {/* Tool Bar */}
                 <div className="shadow-sm">
-                    <CardToolBar/>
+                    <CardToolBar />
                 </div>
 
                 {/* Content Area with Cards */}
                 <div className="bg-white shadow-md rounded-md mt-2 h-screen">
                     <div className="">
-                        <CardTable/>
+                        <CardTable />
                     </div>
+                </div>
+            </div>
+
+            {/* Pagination */}
+            <div className="flex justify-center items-center mt-2 w-full">
+                <div className="flex items-center gap-2 p-2 bg-white shadow-sm rounded-lg border border-gray-200">
+                    <PaginationCourse />
                 </div>
             </div>
         </>

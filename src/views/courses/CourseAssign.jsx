@@ -2,6 +2,7 @@ import React from "react";
 
 // components
 import CardToolBar from "../../components/Cards/Courses/CardToolBar";
+import PaginationCourse from "../../components/Paginations/PaginationCourse";
 
 export default function CourseAssign() {
     return (
@@ -49,6 +50,13 @@ export default function CourseAssign() {
                         <div className="bg-gray-200 rounded-md h-96 p-3">
                             <h1>Optional</h1>
                         </div>
+                    </div>
+                </div>
+                
+                {/* Pagination */}
+                <div className="flex justify-center items-center mt-2 w-full">
+                    <div className="flex items-center gap-2 p-2 bg-white shadow-sm rounded-lg border border-gray-200">
+                        <PaginationCourse />
                     </div>
                 </div>
             </div>
