@@ -21,10 +21,10 @@ root.render(
       <Route path='/admin/*' element={<Admin />} />
 
       {/* Route for without layouts */}
-      <Route path="/" element={<HomePage />} />
+      <Route path="/welcome" element={<HomePage />} />
 
       {/* Redirect to the home page */}
-      <Route path="/" element={<Navigate to="/" />} />
+      <Route path="/" element={<Navigate to="/welcome" />} />
     </Routes>
   </BrowserRouter>
 );
