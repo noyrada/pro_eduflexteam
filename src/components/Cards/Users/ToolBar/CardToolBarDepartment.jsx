@@ -34,8 +34,8 @@ export default function CardToolBarDepartment() {
                     </Link>
                     {/* Department */}
                     <Link
-                        to="/admin/department"
-                        className={`py-2 px-4 rounded-lg block ${isActive("/admin/department") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                        to="/admin/users-department"
+                        className={`py-2 px-4 rounded-lg block ${isActive("/admin/users-department") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
                     >
                         Departments
                     </Link>

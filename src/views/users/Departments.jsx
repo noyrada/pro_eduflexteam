@@ -8,8 +8,8 @@ export default function Departments() {
         <>
             <div className="grid grid-rows-[auto,auto,1fr] mx-8">
                 {/* Breadcrumb */}
-                <div className="bg-gray-200 p-4 shadow-sm">
-                    <p>Home &gt; Department</p>
+                <div className="text-md mb-3">
+                    <p>Home / Department</p>
                 </div>
 
                 {/* Tool Bar */}

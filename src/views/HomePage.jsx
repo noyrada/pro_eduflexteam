@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/EduFlex-logo.png"; // Importing the image
+import logo from "../assets/images/EduFlex-logo.png";
 
 // components
 import Sidebar from "../components/Sidebar/Sidbar.jsx";
@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
 
         {/* Main Content */}
-        <div className="col-span-5 row-span-1">
+        <div className="col-span-5 row-span-1 bg-gray-300">
           <div className="grid place-items-center">
             <div className="text-center mt-9">
               {/* Corrected image src reference */}
@@ -41,7 +41,7 @@ export default function HomePage() {
         </div>
 
         {/* Footer */}
-        <div className="col-span-5">
+        <div className="col-span-5 bg-gray-300">
           <FooterHome />
         </div>
       </div>

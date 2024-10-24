@@ -54,7 +54,7 @@ export default function Admin() {
                         <Route path="/users-role" element={<UserRoles />} />
                         <Route path="/users-group" element={<UserGroups />} />
 
-                        <Route path="/department" element={<Departments />} />
+                        <Route path="/users-department" element={<Departments />} />
 
                         {/* Redirect from /admin to /admin/dashboard */}
                         <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />

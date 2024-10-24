@@ -9,8 +9,8 @@ export default function CourseAssign() {
         <>
             <div className="grid grid-rows-[auto,auto,1fr] mx-8">
                 {/* Breadcrumb */}
-                <div className="bg-gray-200 p-4 shadow-sm">
-                    <p>Home &gt; Course &gt; Assigned</p>
+                <div className="text-md mb-3">
+                    <p>Home / Assign</p>
                 </div>
 
                 {/* Tool Bar */}

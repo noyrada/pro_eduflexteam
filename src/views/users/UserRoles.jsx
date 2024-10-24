@@ -8,8 +8,8 @@ export default function UserRoles() {
         <>
             <div className="grid grid-rows-[auto,auto,1fr] mx-8">
                 {/* Breadcrumb */}
-                <div className="bg-gray-200 p-4 shadow-sm">
-                    <p>Home &gt; Role</p>
+                <div className="text-md mb-3">
+                    <p>Home / Role</p>
                 </div>
 
                 {/* Tool Bar */}
