@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 // components
 import CardStats from "../../components/Cards/CardStats";
@@ -33,7 +34,9 @@ export default function Dashboard() {
 
         {/* Card Courses */}
         <div className="col-span-4 bg-white shadow-md rounded-sm max-h-max">
-          <CardCourses />
+          <Link to="/admin/courses-view">
+            <CardCourses />
+          </Link>
         </div>
       </div>
     </>

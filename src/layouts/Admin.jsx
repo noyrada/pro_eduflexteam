@@ -13,11 +13,12 @@ import CourseTable from "../views/courses/CourseTable.jsx";
 import CourseAssign from '../views/courses/CourseAssign.jsx';
 import CourseEvent from '../views/courses/CourseEvent.jsx'
 import Users from "../views/admin/Users.jsx";
+import CourseView from "../views/courses/CourseView.jsx";
 
 export default function Admin() {
     return (
         <>
-            <div className="grid grid-cols-6 grid-rows-12 bg-gray-100">
+            <div className="grid grid-cols-6 grid-rows-12 bg-gray-100 overflow-hidden">
                 {/* Sidebar */}
                 <div className="col-span-1 row-span-full bg-gray-100">
                     <Sidebar />
@@ -39,6 +40,7 @@ export default function Admin() {
                         <Route path="/courses-table" element={< CourseTable/>} />
                         <Route path="/courses-assign" element={< CourseAssign/>} />
                         <Route path="/courses-event" element={< CourseEvent/>} />
+                        <Route path="/courses-view" element={< CourseView/>} />
 
                         {/* Route for users */}
                         <Route path="/users" element={<Users/>} />
