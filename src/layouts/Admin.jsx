@@ -8,12 +8,19 @@ import FooterAdmin from "../components/Footer/FooterAdmin.jsx";
 
 // views
 import Dashboard from "../views/admin/Dashboard";
+
+// Courses
 import Courses from "../views/admin/Courses.jsx";
 import CourseTable from "../views/courses/CourseTable.jsx";
 import CourseAssign from '../views/courses/CourseAssign.jsx';
 import CourseEvent from '../views/courses/CourseEvent.jsx'
-import Users from "../views/admin/Users.jsx";
 import CourseView from "../views/courses/CourseView.jsx";
+
+// Users
+import Users from "../views/admin/Users.jsx";
+import UserRoles from '../views/users/UserRoles.jsx';
+import UserGroups from "../views/users/UserGroups.jsx";
+import Departments from "../views/users/Departments.jsx";
 
 export default function Admin() {
     return (
@@ -24,7 +31,7 @@ export default function Admin() {
                     <Sidebar />
                 </div>
 
-                {/* Header */} 
+                {/* Header */}
                 <div className="col-span-5 h-20" >
                     <AdminNavbar />
                 </div>
@@ -36,24 +43,27 @@ export default function Admin() {
                         <Route path="/dashboard" element={<Dashboard />} />
 
                         {/* Route for courses */}
-                        <Route path="/courses" element={<Courses/>} />
-                        <Route path="/courses-table" element={< CourseTable/>} />
-                        <Route path="/courses-assign" element={< CourseAssign/>} />
-                        <Route path="/courses-event" element={< CourseEvent/>} />
-                        <Route path="/courses-view" element={< CourseView/>} />
+                        <Route path="/courses" element={<Courses />} />
+                        <Route path="/courses-table" element={< CourseTable />} />
+                        <Route path="/courses-assign" element={< CourseAssign />} />
+                        <Route path="/courses-event" element={< CourseEvent />} />
+                        <Route path="/courses-view" element={< CourseView />} />
 
                         {/* Route for users */}
-                        <Route path="/users" element={<Users/>} />
-                        <Route path="/users-roles" element={<Users/>}/>
+                        <Route path="/users" element={<Users />} />
+                        <Route path="/users-role" element={<UserRoles />} />
+                        <Route path="/users-group" element={<UserGroups />} />
+
+                        <Route path="/department" element={<Departments />} />
 
                         {/* Redirect from /admin to /admin/dashboard */}
                         <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />
                     </Routes>
                 </div>
 
-                {/* Footer */} 
+                {/* Footer */}
                 <div className="col-span-5 row-span-2 p-4 h-16 mt-6">
-                    <FooterAdmin/>
+                    <FooterAdmin />
                 </div>
             </div>
         </>

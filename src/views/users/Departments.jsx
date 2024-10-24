@@ -1,27 +1,26 @@
 import React from "react";
 
 // component 
-import CardToolBarUser from "../../components/Cards/Users/ToolBar/CardToolBarUser";
-import CardTableUsers from "../../components/Cards/Users/CardTableUser";
+import CardToolBarDepartment from "../../components/Cards/Users/ToolBar/CardToolBarDepartment";
 
-export default function Users() {
+export default function Departments() {
     return (
         <>
             <div className="grid grid-rows-[auto,auto,1fr] mx-8">
                 {/* Breadcrumb */}
                 <div className="bg-gray-200 p-4 shadow-sm">
-                    <p>Home &gt; Users</p>
+                    <p>Home &gt; Department</p>
                 </div>
 
                 {/* Tool Bar */}
                 <div className=" shadow-sm">
-                    <CardToolBarUser />
+                    <CardToolBarDepartment />
                 </div>
 
                 {/* Content Area with Cards */}
                 <div className="bg-white shadow-md rounded-md mt-2">
                     <div className="grid grid-cols-3 gap-6 p-5 h-screen">
-                        <CardTableUsers />
+                        This is User Groups
                     </div>
                 </div>
             </div>
