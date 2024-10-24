@@ -1,6 +1,7 @@
 import React from "react";
 
 // components
+import CardViewCourse from "../../components/Cards/Courses/CardViewCourse";
 
 export default function CourseView() {
     return (
@@ -10,7 +11,7 @@ export default function CourseView() {
                 {/* Content Area with Cards */}
                 <div className="bg-white shadow-md rounded-md h-screen">
                     <div className="">
-                       This view page 
+                        <CardViewCourse/>
                     </div>
                 </div>
             </div>
