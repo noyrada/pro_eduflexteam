@@ -9,8 +9,8 @@ export default function Users() {
         <>
             <div className="grid grid-rows-[auto,auto,1fr] mx-8">
                 {/* Breadcrumb */}
-                <div className="bg-gray-200 p-4 shadow-sm">
-                    <p>Home &gt; Users</p>
+                <div className="text-md mb-3">
+                    <p>Home / User</p>
                 </div>
 
                 {/* Tool Bar */}
