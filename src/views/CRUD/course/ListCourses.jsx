@@ -1,8 +1,8 @@
 import React from "react";
 
 // component
-import CardToolBar from "../../components/Cards/Courses/CardToolBar";
-import PaginationCourse from "../../components/Paginations/PaginationCourse";
+import CardToolBar from "../../../components/Cards/Courses/CardToolBar";
+import PaginationCourse from "../../../components/Paginations/PaginationCourse";
 
 export default function Courses() {
     return (

@@ -100,7 +100,7 @@ export default function Sidebar() {
                                         }
                                     >
                                         <span className="md:mr-2 text-xl">
-                                            <ion-icon name="person-outline"></ion-icon>
+                                            <ion-icon name="people-outline"></ion-icon>
                                         </span>
                                         <span className="absolute left-[14%] md:left-12">
                                             Users

@@ -1,7 +1,7 @@
 import React from "react";
 
 // component 
-import CardToolBarRole from "../../components/Cards/Users/ToolBar/CardToolBarRole";
+import CardToolBarRole from "../../components/ToolBar/CardToolBarRole";
 
 export default function UserRoles() {
     return (

@@ -10,16 +10,17 @@ import FooterAdmin from "../components/Footer/FooterAdmin.jsx";
 import Dashboard from "../views/admin/Dashboard";
 
 // Courses
-import Courses from "../views/admin/Courses.jsx";
+import ListCourses from '../views/CRUD/course/ListCourses.jsx'
 import CourseTable from "../views/courses/CourseTable.jsx";
 import CourseAssign from '../views/courses/CourseAssign.jsx';
 import CourseEvent from '../views/courses/CourseEvent.jsx'
 import CourseView from "../views/courses/CourseView.jsx";
 
 // Users
-import Users from "../views/admin/Users.jsx";
+import ListUsers from "../views/CRUD/user/ListUser.jsx";
+import CreateUser from "../views/CRUD/user/CreateUser.jsx";
+
 import UserRoles from '../views/users/UserRoles.jsx';
-import UserGroups from "../views/users/UserGroups.jsx";
 import Departments from "../views/users/Departments.jsx";
 
 export default function Admin() {
@@ -43,16 +44,17 @@ export default function Admin() {
                         <Route path="/dashboard" element={<Dashboard />} />
 
                         {/* Route for courses */}
-                        <Route path="/courses" element={<Courses />} />
+                        <Route path="/courses" element={<ListCourses />} />
                         <Route path="/courses-table" element={< CourseTable />} />
                         <Route path="/courses-assign" element={< CourseAssign />} />
                         <Route path="/courses-event" element={< CourseEvent />} />
                         <Route path="/courses-view" element={< CourseView />} />
 
                         {/* Route for users */}
-                        <Route path="/users" element={<Users />} />
+                        <Route path="/users" element={<ListUsers />} />
+                        <Route path="/users-create" element={<CreateUser />} />
+
                         <Route path="/users-role" element={<UserRoles />} />
-                        <Route path="/users-group" element={<UserGroups />} />
 
                         <Route path="/users-department" element={<Departments />} />
 

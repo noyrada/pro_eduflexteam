@@ -1,7 +1,7 @@
 import React from "react";
 
 // component 
-import CardToolBarDepartment from "../../components/Cards/Users/ToolBar/CardToolBarDepartment";
+import CardToolBarDepartment from "../../components/ToolBar/CardToolBarDepartment";
 
 export default function Departments() {
     return (
