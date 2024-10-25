@@ -1,9 +1,9 @@
 import React from "react";
 
 // component 
-import CardToolBarRole from "../../components/ToolBar/CardToolBarRole";
+import CardToolBarRole from "../../../components/ToolBar/CardToolBarRole";
 
-export default function UserRoles() {
+export default function ListRole() {
     return (
         <>
             <div className="grid grid-rows-[auto,auto,1fr] mx-8">
@@ -19,8 +19,8 @@ export default function UserRoles() {
 
                 {/* Content Area with Cards */}
                 <div className="bg-white shadow-md rounded-md mt-2">
-                    <div className="grid grid-cols-3 gap-6 p-5 h-screen">
-                        This is User Roles
+                    <div className="h-screen">
+                        List of Roles
                     </div>
                 </div>
             </div>

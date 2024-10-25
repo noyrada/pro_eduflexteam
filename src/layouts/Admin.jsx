@@ -20,9 +20,8 @@ import CourseView from "../views/courses/CourseView.jsx";
 import ListUsers from "../views/CRUD/user/ListUser.jsx";
 import CreateUser from "../views/CRUD/user/CreateUser.jsx";
 
-import UserRoles from '../views/users/UserRoles.jsx';
-import Departments from "../views/users/Departments.jsx";
-
+import ListRole from "../views/CRUD/role/ListRole.jsx";
+import ListDepartment from '../views/CRUD/department/ListDepartment.jsx'
 export default function Admin() {
     return (
         <>
@@ -54,9 +53,9 @@ export default function Admin() {
                         <Route path="/users" element={<ListUsers />} />
                         <Route path="/users-create" element={<CreateUser />} />
 
-                        <Route path="/users-role" element={<UserRoles />} />
+                        <Route path="/users-role" element={<ListRole />} />
 
-                        <Route path="/users-department" element={<Departments />} />
+                        <Route path="/users-department" element={<ListDepartment />} />
 
                         {/* Redirect from /admin to /admin/dashboard */}
                         <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />

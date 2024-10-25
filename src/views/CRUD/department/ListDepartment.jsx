@@ -1,7 +1,7 @@
 import React from "react";
 
 // component 
-import CardToolBarDepartment from "../../components/ToolBar/CardToolBarDepartment";
+import CardToolBarDepartment from "../../../components/ToolBar/CardToolBarDepartment";
 
 export default function Departments() {
     return (
@@ -19,8 +19,8 @@ export default function Departments() {
 
                 {/* Content Area with Cards */}
                 <div className="bg-white shadow-md rounded-md mt-2">
-                    <div className="grid grid-cols-3 gap-6 p-5 h-screen">
-                        This is User Groups
+                    <div className="h-screen">
+                        List of Groups
                     </div>
                 </div>
             </div>
