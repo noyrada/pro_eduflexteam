@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-export default function CardToolBarRole() {
+export default function CardToolBarDepartment() {
     const location = useLocation();
 
     const isActive = (path) => location.pathname === path;
@@ -25,13 +25,7 @@ export default function CardToolBarRole() {
                     >
                         Roles
                     </Link>
-                    {/* User Groups */}
-                    <Link
-                        to="/admin/users-group"
-                        className={`py-2 px-4 rounded-lg block ${isActive("/admin/users-group") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
-                    >
-                        Groups
-                    </Link>
+                   
                     {/* Department */}
                     <Link
                         to="/admin/users-department"
@@ -47,7 +41,7 @@ export default function CardToolBarRole() {
                     {/* Add New Course */}
                     <button className="bg-blue-500 text-white py-2 px-3 rounded-lg flex items-center">
                         <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
-                        Add Role
+                        Add Department
                     </button>
 
                     {/* Filter */}
