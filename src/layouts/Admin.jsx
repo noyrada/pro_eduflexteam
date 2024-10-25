@@ -21,6 +21,8 @@ import ListUsers from "../views/CRUD/user/ListUser.jsx";
 import CreateUser from "../views/CRUD/user/CreateUser.jsx";
 
 import ListRole from "../views/CRUD/role/ListRole.jsx";
+import CreateRole from "../views/CRUD/role/CreateRole.jsx";
+
 import ListDepartment from '../views/CRUD/department/ListDepartment.jsx'
 export default function Admin() {
     return (
@@ -54,6 +56,7 @@ export default function Admin() {
                         <Route path="/users-create" element={<CreateUser />} />
 
                         <Route path="/users-role" element={<ListRole />} />
+                        <Route path="/users-role-create" element={<CreateRole />} />
 
                         <Route path="/users-department" element={<ListDepartment />} />
 
