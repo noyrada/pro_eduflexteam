@@ -44,18 +44,20 @@ export default function CardToolBar() {
 
                     {/* View as table */}
                     <Link to="/admin/courses-table"
-                     className={`py-1 rounded-lg block ${isActive("/admin/courses-table") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
-                     >
+                        className={`py-1 rounded-lg block ${isActive("/admin/courses-table") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                    >
                         <span className="px-2 py-1 border rounded-lg">
                             <ion-icon name="reorder-four-outline"></ion-icon>
                         </span>
                     </Link>
 
                     {/* Add New Course */}
-                    <button className="bg-blue-500 text-white py-2 px-3 rounded-lg flex items-center">
-                        <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
-                        Add New Course
-                    </button>
+                    <Link to="/admin/courses-create">
+                        <button className="bg-blue-500 text-white py-2 px-3 rounded-lg flex items-center">
+                            <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
+                            Add New Course
+                        </button>
+                    </Link>
 
                     {/* Filter */}
                     <button className="bg-green-500 text-white py-2 px-3 rounded-lg flex items-center">

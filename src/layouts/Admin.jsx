@@ -24,6 +24,7 @@ import ListRole from "../views/CRUD/role/ListRole.jsx";
 import CreateRole from "../views/CRUD/role/CreateRole.jsx";
 
 import ListDepartment from '../views/CRUD/department/ListDepartment.jsx'
+import CreateCourse from "../views/CRUD/course/CreateCourse.jsx";
 export default function Admin() {
     return (
         <>
@@ -50,6 +51,8 @@ export default function Admin() {
                         <Route path="/courses-assign" element={< CourseAssign />} />
                         <Route path="/courses-event" element={< CourseEvent />} />
                         <Route path="/courses-view" element={< CourseView />} />
+
+                        <Route path="/courses-create" element={<CreateCourse/>}/>
 
                         {/* Route for users */}
                         <Route path="/users" element={<ListUsers />} />
