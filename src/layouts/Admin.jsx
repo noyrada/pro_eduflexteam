@@ -24,6 +24,14 @@ import ListRole from "../views/CRUD/role/ListRole.jsx";
 import CreateRole from "../views/CRUD/role/CreateRole.jsx";
 
 import ListDepartment from '../views/CRUD/department/ListDepartment.jsx'
+import CreateCourse from "../views/CRUD/course/CreateCourse.jsx";
+
+// Report
+import Report from "../views/admin/reports/Report.jsx";
+
+// Settings
+import SettingPage from "../views/manage/SettingPage.jsx";
+
 export default function Admin() {
     return (
         <>
@@ -51,6 +59,8 @@ export default function Admin() {
                         <Route path="/courses-event" element={< CourseEvent />} />
                         <Route path="/courses-view" element={< CourseView />} />
 
+                        <Route path="/courses-create" element={<CreateCourse/>}/>
+
                         {/* Route for users */}
                         <Route path="/users" element={<ListUsers />} />
                         <Route path="/users-create" element={<CreateUser />} />
@@ -59,6 +69,12 @@ export default function Admin() {
                         <Route path="/users-role-create" element={<CreateRole />} />
 
                         <Route path="/users-department" element={<ListDepartment />} />
+
+                        {/* Reports */}
+                        <Route path="/reports" element={<Report />} />
+
+                        {/* Settings */}
+                        <Route path="/settings" element={<SettingPage />} />
 
                         {/* Redirect from /admin to /admin/dashboard */}
                         <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />

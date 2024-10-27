@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 // components
-// import CardToolBarUser from "../../../components/Cards/Users/ToolBar/CardToolBarUser";
 
-export default function CreateUser() {
+export default function CreateCourse() {
     const [formData, setFormData] = useState({
         username: "",
         email: "",
@@ -29,7 +28,7 @@ export default function CreateUser() {
             <div className="grid grid-rows-[auto,auto,1fr] mx-8">
                 {/* Breadcrumb */}
                 <div className="text-md mb-3">
-                    <p>User / Create</p>
+                    <p>Course / Create</p>
                 </div>
 
                 <div className="w-full mx-auto p-6 bg-white rounded-lg shadow-md">
