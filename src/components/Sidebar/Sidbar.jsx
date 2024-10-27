@@ -11,6 +11,7 @@ export default function Sidebar() {
     // Check if current path 
     const isUsersActive = location.pathname.startsWith("/admin/users");
     const isCoursesActive = location.pathname.startsWith("/admin/courses");
+    const isSettingsActive = location.pathname.startsWith("/admin/settings");
 
     return (
         <>
@@ -132,7 +133,7 @@ export default function Sidebar() {
                                     <NavLink
                                         to="/admin/settings"
                                         className={({ isActive }) =>
-                                            isActive
+                                            isSettingsActive
                                                 ? " text-white px-2 p-2 bg-blue-600 rounded-lg block"
                                                 : "px-2 p-2 text-gray-700"
                                         }

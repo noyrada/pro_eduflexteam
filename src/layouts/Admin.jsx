@@ -28,6 +28,10 @@ import CreateCourse from "../views/CRUD/course/CreateCourse.jsx";
 
 // Report
 import Report from "../views/admin/reports/Report.jsx";
+
+// Settings
+import SettingPage from "../views/manage/SettingPage.jsx";
+
 export default function Admin() {
     return (
         <>
@@ -68,6 +72,9 @@ export default function Admin() {
 
                         {/* Reports */}
                         <Route path="/reports" element={<Report />} />
+
+                        {/* Settings */}
+                        <Route path="/settings" element={<SettingPage />} />
 
                         {/* Redirect from /admin to /admin/dashboard */}
                         <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />
