@@ -23,7 +23,7 @@ import CreateUser from "../views/CRUD/user/CreateUser.jsx";
 import ListRole from "../views/CRUD/role/ListRole.jsx";
 import CreateRole from "../views/CRUD/role/CreateRole.jsx";
 
-import ListDepartment from '../views/CRUD/department/ListDepartment.jsx'
+import ListDepartment from '../views/CRUD/department/ListDepartment.jsx';
 import CreateCourse from "../views/CRUD/course/CreateCourse.jsx";
 
 // Report
@@ -31,6 +31,8 @@ import Report from "../views/admin/reports/Report.jsx";
 
 // Settings
 import SettingPage from "../views/manage/SettingPage.jsx";
+import SettingRole from "../views/manage/SettingRole.jsx";
+import UserManagement from "../views/manage/UserManagement.jsx";
 
 export default function Admin() {
     return (
@@ -74,7 +76,9 @@ export default function Admin() {
                         <Route path="/reports" element={<Report />} />
 
                         {/* Settings */}
-                        <Route path="/settings" element={<SettingPage />} />
+                        <Route path="/setting-page" element={<SettingPage />} />
+                        <Route path="/setting-role" element={<SettingRole />} />
+                        <Route path="/setting-user-management" element={<UserManagement />} />
 
                         {/* Redirect from /admin to /admin/dashboard */}
                         <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />

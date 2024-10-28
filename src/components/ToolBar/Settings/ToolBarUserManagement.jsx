@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-export default function ToolBarPage() {
+export default function ToolBarUserManagement() {
     const location = useLocation();
 
     const isActive = (path) => location.pathname === path;
@@ -21,7 +21,7 @@ export default function ToolBarPage() {
                     {/* User Roles */}
                     <Link
                         to="/admin/setting-role"
-                        className={`py-2 px-4 rounded-lg block ${isActive("/admin/settings-role") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                        className={`py-2 px-4 rounded-lg block ${isActive("/admin/setting-role") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
                     >
                         Role & Permission
                     </Link>
@@ -40,10 +40,10 @@ export default function ToolBarPage() {
 
                     {/* Add New Course */}
                     <Link
-                        to="/admin/setting-page-create">
+                        to="/admin/users-create">
                         <button className="bg-blue-500 text-white py-2 px-3 rounded-lg flex items-center">
                             <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
-                            New Page
+                            New User
                         </button>
                     </Link>
                 </div>
