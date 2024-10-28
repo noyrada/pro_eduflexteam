@@ -15,7 +15,7 @@ export default function Sidebar() {
 
     return (
         <>
-            <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 px-6">
+            <nav className="font-suwannaphum text-sm md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 px-6">
                 <div className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
                     
                     {/* Toggler */}
@@ -65,7 +65,7 @@ export default function Sidebar() {
                                         <span className="md:mr-2 text-xl">
                                             <ion-icon name="grid-outline"></ion-icon>
                                         </span>
-                                        <span className="absolute left-[14%] md:left-12 font-suwannaphum">
+                                        <span className="absolute left-[14%] md:left-12 mt-1">
                                             ផ្ទាំងគ្រប់គ្រង
                                         </span>
                                     </NavLink>
@@ -84,7 +84,7 @@ export default function Sidebar() {
                                         <span className="md:mr-2 text-xl">
                                             <ion-icon name="newspaper-outline"></ion-icon>
                                         </span>
-                                        <span className="absolute left-[14%] md:left-12 font-suwannaphum">
+                                        <span className="absolute left-[14%] md:left-12 mt-1">
                                             វគ្គសិក្សា
                                         </span>
                                     </NavLink>
@@ -103,7 +103,7 @@ export default function Sidebar() {
                                         <span className="md:mr-2 text-xl">
                                             <ion-icon name="people-outline"></ion-icon>
                                         </span>
-                                        <span className="absolute left-[14%] md:left-12 font-suwannaphum">
+                                        <span className="absolute left-[14%] md:left-12 mt-1">
                                             អ្នកប្រើប្រាស់់
                                         </span>
                                     </NavLink>
@@ -122,7 +122,7 @@ export default function Sidebar() {
                                         <span className="md:mr-2 text-xl">
                                             <ion-icon name="pie-chart-outline"></ion-icon>
                                         </span>
-                                        <span className="absolute left-[14%] md:left-12 font-suwannaphum">
+                                        <span className="absolute left-[14%] md:left-12 mt-1">
                                             របាយការណ៍
                                         </span>
                                     </NavLink>
@@ -141,7 +141,7 @@ export default function Sidebar() {
                                         <span className="md:mr-2 text-xl">
                                             <ion-icon name="settings-outline"></ion-icon>
                                         </span>
-                                        <span className="absolute left-[14%] md:left-12 font-suwannaphum">
+                                        <span className="absolute left-[14%] md:left-12 mt-1">
                                             ការកំណត់់
                                         </span>
                                     </NavLink>

@@ -6,10 +6,10 @@ import CardToolBarDepartment from "../../../components/ToolBar/CardToolBarDepart
 export default function Departments() {
     return (
         <>
-            <div className="grid grid-rows-[auto,auto,1fr] mx-8">
+            <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
                 {/* Breadcrumb */}
                 <div className="text-md mb-3">
-                    <p>Home / Department</p>
+                    <p>ទំព័រដើម / នាយកដ្ឋាន</p>
                 </div>
 
                 {/* Tool Bar */}
@@ -20,7 +20,7 @@ export default function Departments() {
                 {/* Content Area with Cards */}
                 <div className="bg-white shadow-md rounded-md mt-2">
                     <div className="h-screen">
-                        List of Groups
+                        តារាងនាយកដ្ឋាន
                     </div>
                 </div>
             </div>

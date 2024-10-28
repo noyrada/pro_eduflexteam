@@ -6,10 +6,10 @@ import CardToolBarRole from "../../../components/ToolBar/CardToolBarRole";
 export default function ListRole() {
     return (
         <>
-            <div className="grid grid-rows-[auto,auto,1fr] mx-8">
+            <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
                 {/* Breadcrumb */}
                 <div className="text-md mb-3">
-                    <p>Home / Role</p>
+                    <p>ទំព័រដើម / តួនាទី</p>
                 </div>
 
                 {/* Tool Bar */}
@@ -20,7 +20,7 @@ export default function ListRole() {
                 {/* Content Area with Cards */}
                 <div className="bg-white shadow-md rounded-md mt-2">
                     <div className="h-screen">
-                        List of Roles
+                        តារាងតួនាទី
                     </div>
                 </div>
             </div>
