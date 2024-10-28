@@ -22,7 +22,7 @@ export default function CardToolBarRole() {
     const isActive = (path) => location.pathname === path;
 
     return (
-        <div className="bg-white p-2 rounded-md">
+        <div className="bg-white p-2 rounded-md text-sm font-suwannaphum">
             <div className="flex justify-between items-center">
                 {/* Left Side */}
                 <div className="flex space-x-4">
@@ -31,14 +31,14 @@ export default function CardToolBarRole() {
                         to="/admin/users"
                         className={`py-2 px-4 rounded-lg block ${isActive("/admin/users") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
                     >
-                        Users
+                        អ្នកប្រើប្រាស់់
                     </Link>
                     {/* User Roles */}
                     <Link
                         to="/admin/users-role"
                         className={`py-2 px-4 rounded-lg block ${isActive("/admin/users-role") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
                     >
-                        Roles
+                        តួនាទី
                     </Link>
 
                     {/* Department */}
@@ -46,7 +46,7 @@ export default function CardToolBarRole() {
                         to="/admin/users-department"
                         className={`py-2 px-4 rounded-lg block ${isActive("/admin/users-department") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
                     >
-                        Departments
+                        នាយកដ្ឋាន
                     </Link>
                 </div>
 
@@ -58,13 +58,13 @@ export default function CardToolBarRole() {
                         className="bg-blue-500 text-white py-2 px-3 rounded-lg flex items-center"
                     >
                         <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
-                        Add Role
+                        បង្កើតថ្មី
                     </button>
 
                     {/* Filter Button */}
                     <button className="bg-green-500 text-white py-2 px-3 rounded-lg flex items-center">
                         <ion-icon name="filter-outline" className="pr-2"></ion-icon>
-                        Filter
+                        តម្រង
                     </button>
                 </div>
             </div>
