@@ -1,7 +1,7 @@
 import React from "react";
 
 // component 
-import ToolBarPage from "../../components/ToolBar/Settings/ToolbarPage"; 
+import ToolBarRole from "../../components/ToolBar/Settings/ToolBarRole";
 
 export default function SettingPage() {
     return (
@@ -9,18 +9,18 @@ export default function SettingPage() {
             <div className="grid grid-rows-[auto,auto,1fr] mx-8">
                 {/* Breadcrumb */}
                 <div className="text-md mb-3">
-                    <p>Setting / Page</p>
+                    <p>Role / Permission</p>
                 </div>
 
                 {/* Tool Bar */}
                 <div className=" shadow-sm">
-                    <ToolBarPage />
+                    <ToolBarRole />
                 </div>
 
                 {/* Content Area with Cards */}
                 <div className="bg-white shadow-md rounded-md mt-2">
                     <div className="h-screen">
-                        Page Management
+                        Role and Permission Managemnt
                     </div>
                 </div>
             </div>
