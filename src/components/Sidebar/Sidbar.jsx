@@ -53,96 +53,96 @@ export default function Sidebar() {
                         <div className="mt-2">
                             <ul>
                                 {/* Dashboard */}
-                                <li className="mb-3">
+                                <li className="mb-1">
                                     <NavLink
                                         to="/admin/dashboard"
                                         className={({ isActive }) =>
                                             isActive
-                                                ? " text-white bg-blue-600 px-2 p-2 rounded-lg block"
-                                                : "px-2 p-2 text-gray-700"
+                                                ? " text-white bg-blue-600 px-2 p-2 rounded-md block"
+                                                : "px-2 p-2 text-gray-700 hover:bg-blue-100 hover:text-gray-700 rounded-md transition-colors duration-200 ease-in-out block"
                                         }
                                     >
                                         <span className="md:mr-2 text-xl">
                                             <ion-icon name="grid-outline"></ion-icon>
                                         </span>
-                                        <span className="absolute left-[14%] md:left-12">
-                                            Dashboard
+                                        <span className="absolute left-[14%] md:left-12 font-suwannaphum">
+                                            ផ្ទាំងគ្រប់គ្រង
                                         </span>
                                     </NavLink>
                                 </li>
 
                                 {/* Courses */}
-                                <li className="mb-3">
+                                <li className="mb-1">
                                     <NavLink
                                         to="/admin/courses"
                                         className={({ isActive }) =>
                                             isCoursesActive
-                                                ? " text-white px-2 p-2 rounded-lg bg-blue-600 block"
-                                                : "px-2 p-2 text-gray-700"
+                                                ? " text-white px-2 p-2 rounded-md bg-blue-600 block"
+                                                : "px-2 p-2 text-gray-700 hover:bg-blue-100 hover:text-gray-700 rounded-md transition-colors duration-200 ease-in-out block"
                                         }
                                     >
                                         <span className="md:mr-2 text-xl">
                                             <ion-icon name="newspaper-outline"></ion-icon>
                                         </span>
-                                        <span className="absolute left-[14%] md:left-12">
-                                            Courses
+                                        <span className="absolute left-[14%] md:left-12 font-suwannaphum">
+                                            វគ្គសិក្សា
                                         </span>
                                     </NavLink>
                                 </li>
 
                                 {/* Users (with subroutes active check) */}
-                                <li className="mb-3">
+                                <li className="mb-1">
                                     <NavLink
                                         to="/admin/users"
                                         className={({ isActive }) =>
                                             isUsersActive
-                                                ? " text-white px-2 p-2 bg-blue-600 rounded-lg block"
-                                                : "px-2 p-2 text-gray-700"
+                                                ? " text-white px-2 p-2 bg-blue-600 rounded-md block"
+                                                : "px-2 p-2 text-gray-700 hover:bg-blue-100 hover:text-gray-700 rounded-md transition-colors duration-200 ease-in-out block"
                                         }
                                     >
                                         <span className="md:mr-2 text-xl">
                                             <ion-icon name="people-outline"></ion-icon>
                                         </span>
-                                        <span className="absolute left-[14%] md:left-12">
-                                            Users
+                                        <span className="absolute left-[14%] md:left-12 font-suwannaphum">
+                                            អ្នកប្រើប្រាស់់
                                         </span>
                                     </NavLink>
                                 </li>
 
                                 {/* Reports */}
-                                <li className="mb-3">
+                                <li className="mb-1">
                                     <NavLink
                                         to="/admin/reports"
                                         className={({ isActive }) =>
                                             isActive
-                                                ? " text-white px-2 p-2 bg-blue-600 rounded-lg block"
-                                                : "px-2 p-2 text-gray-700"
+                                                ? " text-white px-2 p-2 bg-blue-600 rounded-md block"
+                                                : "px-2 p-2 text-gray-700 hover:bg-blue-100 hover:text-gray-700 rounded-md transition-colors duration-200 ease-in-out block"
                                         }
                                     >
                                         <span className="md:mr-2 text-xl">
                                             <ion-icon name="pie-chart-outline"></ion-icon>
                                         </span>
-                                        <span className="absolute left-[14%] md:left-12">
-                                            Reports
+                                        <span className="absolute left-[14%] md:left-12 font-suwannaphum">
+                                            របាយការណ៍
                                         </span>
                                     </NavLink>
                                 </li>
 
                                 {/* Settings */}
-                                <li className="mb-3">
+                                <li className="mb-1">
                                     <NavLink
                                         to="/admin/setting-page"
                                         className={({ isActive }) =>
                                             isSettingsActive
-                                                ? " text-white px-2 p-2 bg-blue-600 rounded-lg block"
-                                                : "px-2 p-2 text-gray-700"
+                                                ? " text-white px-2 p-2 bg-blue-600 rounded-md block"
+                                                : "px-2 p-2 text-gray-700 hover:bg-blue-100 hover:text-gray-700 rounded-md transition-colors duration-200 ease-in-out block"
                                         }
                                     >
                                         <span className="md:mr-2 text-xl">
                                             <ion-icon name="settings-outline"></ion-icon>
                                         </span>
-                                        <span className="absolute left-[14%] md:left-12">
-                                            Settings
+                                        <span className="absolute left-[14%] md:left-12 font-suwannaphum">
+                                            ការកំណត់់
                                         </span>
                                     </NavLink>
                                 </li>

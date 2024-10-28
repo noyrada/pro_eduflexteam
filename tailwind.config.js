@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        suwannaphum: ['"Suwannaphum"', 'sans-serif'],
+      },
+      
       height: {
         '100': '28rem',
         '83': '20.75rem',
