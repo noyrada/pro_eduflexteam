@@ -14,24 +14,24 @@ export default function CardToolBarUser() {
                     {/* users */}
                     <Link
                         to="/admin/users"
-                        className={`py-2 px-4 rounded-lg block ${isActive("/admin/users") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                        className={`font-suwannaphum py-2 px-4 rounded-lg block ${isActive("/admin/users") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
                     >
-                        Users
+                        អ្នកប្រើប្រាស់់
                     </Link>
                     {/* User Roles */}
                     <Link
                         to="/admin/users-role"
-                        className={`py-2 px-4 rounded-lg block ${isActive("/admin/users-role") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                        className={`font-suwannaphum py-2 px-4 rounded-lg block ${isActive("/admin/users-role") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
                     >
-                        Roles
+                        តួនាទី
                     </Link>
                     
                     {/* Department */}
                     <Link
                         to="/admin/users-department"
-                        className={`py-2 px-4 rounded-lg block ${isActive("/admin/users-department") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                        className={`font-suwannaphum py-2 px-4 rounded-lg block ${isActive("/admin/users-department") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
                     >
-                        Departments
+                        នាយកដ្ឋាន
                     </Link>
                 </div>
 
@@ -41,16 +41,16 @@ export default function CardToolBarUser() {
                     {/* Add New Course */}
                     <Link 
                         to="/admin/users-create">
-                        <button className="bg-blue-500 text-white py-2 px-3 rounded-lg flex items-center">
+                        <button className="font-suwannaphum bg-blue-500 text-white py-2 px-3 rounded-lg flex items-center">
                             <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
-                            Add User
+                            បង្កើតថ្មី
                         </button>
                     </Link>
 
                     {/* Filter */}
-                    <button className="bg-green-500 text-white py-2 px-3 rounded-lg flex items-center">
+                    <button className="font-suwannaphum bg-green-500 text-white py-2 px-3 rounded-lg flex items-center">
                         <ion-icon name="filter-outline" className="pr-2"></ion-icon>
-                        Filter
+                        តម្រង
                     </button>
                 </div>
             </div>
