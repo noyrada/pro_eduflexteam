@@ -41,7 +41,7 @@ export default function ToolBarUserManagement() {
                     {/* Add New Course */}
                     <Link
                         to="/admin/users-create">
-                        <button className="bg-blue-500 text-white py-2 px-3 rounded-md flex items-center">
+                        <button className="bg-gray-300 text-gray-900 shadow-md py-2 px-3 rounded-md flex items-center">
                             <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
                             បង្កើតថ្មី
                         </button>

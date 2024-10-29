@@ -13,12 +13,12 @@ export default function ListRole() {
                 </div>
 
                 {/* Tool Bar */}
-                <div className=" shadow-sm">
+                <div className="">
                     <CardToolBarRole />
                 </div>
 
                 {/* Content Area with Cards */}
-                <div className="bg-white shadow-md rounded-md mt-2">
+                <div className="bg-white shadow-sm rounded-md mt-2">
                     <div className="h-screen">
                         តារាងតួនាទី
                     </div>

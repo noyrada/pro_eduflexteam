@@ -13,12 +13,12 @@ export default function Departments() {
                 </div>
 
                 {/* Tool Bar */}
-                <div className=" shadow-sm">
+                <div className="">
                     <CardToolBarDepartment />
                 </div>
 
                 {/* Content Area with Cards */}
-                <div className="bg-white shadow-md rounded-md mt-2">
+                <div className="bg-white shadow-sm rounded-md mt-2">
                     <div className="h-screen">
                         តារាងនាយកដ្ឋាន
                     </div>
