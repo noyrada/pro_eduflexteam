@@ -16,8 +16,6 @@ const lessons = [
       { title: "How to do everything in learning", time: "12:47" },
       { title: "How to do everything in learning", time: "12:47" },
       { title: "How to do everything in learning", time: "12:47" },
-      { title: "How to do everything in learning", time: "12:47" },
-      { title: "How to do everything in learning", time: "12:47" },
     ],
   },
 ];
