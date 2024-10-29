@@ -9,12 +9,12 @@ export default function Courses() {
         <>
             <div className="grid grid-rows-[auto,auto,1fr] mx-8">
                 {/* Breadcrumb */}
-                <div className="text-md mb-3">
-                    <p>Home / Courses</p>
+                <div className="text-md mb-3 font-suwannaphum text-sm">
+                    <p>ទំព័រដើម / វគ្គសិក្សា</p>
                 </div>
 
                 {/* Tool Bar */}
-                <div className=" shadow-sm">
+                <div className="">
                     <CardToolBar />
                 </div>
 

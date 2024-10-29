@@ -6,21 +6,21 @@ import ToolBarRole from "../../components/ToolBar/Settings/ToolBarRole";
 export default function SettingPage() {
     return (
         <>
-            <div className="grid grid-rows-[auto,auto,1fr] mx-8">
+            <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
                 {/* Breadcrumb */}
                 <div className="text-md mb-3">
-                    <p>Role / Permission</p>
+                    <p>តួនាទី / ការផ្តល់សិទ្ធ</p>
                 </div>
 
                 {/* Tool Bar */}
-                <div className=" shadow-sm">
+                <div className="">
                     <ToolBarRole />
                 </div>
 
                 {/* Content Area with Cards */}
-                <div className="bg-white shadow-md rounded-md mt-2">
+                <div className="bg-white shadow-sm rounded-md mt-2">
                     <div className="h-screen">
-                        Role and Permission Managemnt
+                        តួនាទី & ការផ្តល់សិទ្ធ
                     </div>
                 </div>
             </div>

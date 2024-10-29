@@ -14,14 +14,14 @@ export default function CardToolBarUser() {
                     {/* users */}
                     <Link
                         to="/admin/users"
-                        className={` py-2 px-4 rounded-lg block ${isActive("/admin/users") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                        className={` py-2 px-4 rounded-md block ${isActive("/admin/users") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
                     >
                         អ្នកប្រើប្រាស់់
                     </Link>
                     {/* User Roles */}
                     <Link
                         to="/admin/users-role"
-                        className={` py-2 px-4 rounded-lg block ${isActive("/admin/users-role") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                        className={` py-2 px-4 rounded-md block ${isActive("/admin/users-role") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
                     >
                         តួនាទី
                     </Link>
@@ -29,7 +29,7 @@ export default function CardToolBarUser() {
                     {/* Department */}
                     <Link
                         to="/admin/users-department"
-                        className={` py-2 px-4 rounded-lg block ${isActive("/admin/users-department") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                        className={` py-2 px-4 rounded-md block ${isActive("/admin/users-department") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
                     >
                         នាយកដ្ឋាន
                     </Link>
@@ -41,14 +41,14 @@ export default function CardToolBarUser() {
                     {/* Add New Course */}
                     <Link 
                         to="/admin/users-create">
-                        <button className=" bg-blue-500 text-white py-2 px-3 rounded-lg flex items-center">
+                        <button className=" bg-gray-300 text-gray-900 shadow-md py-2 px-3 rounded-md flex items-center">
                             <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
                             បង្កើតថ្មី
                         </button>
                     </Link>
 
                     {/* Filter */}
-                    <button className=" bg-green-500 text-white py-2 px-3 rounded-lg flex items-center">
+                    <button className="bg-gray-300 text-gray-900 shadow-md py-2 px-3 rounded-md flex items-center">
                         <ion-icon name="filter-outline" className="pr-2"></ion-icon>
                         តម្រង
                     </button>

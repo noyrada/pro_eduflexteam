@@ -7,31 +7,31 @@ export default function ToolBarUserManagement() {
     const isActive = (path) => location.pathname === path;
 
     return (
-        <div className="bg-white p-2 rounded-md">
+        <div className="bg-white p-2 rounded-md font-suwannaphum text-sm">
             <div className="flex justify-between items-center">
                 {/* Left Side */}
                 <div className="flex space-x-4">
                     {/* users */}
                     <Link
                         to="/admin/setting-page"
-                        className={`py-2 px-4 rounded-lg block ${isActive("/admin/setting-page") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                        className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-page") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
                     >
-                        Page Management
+                        គ្រប់គ្រងទំព័រ
                     </Link>
                     {/* User Roles */}
                     <Link
                         to="/admin/setting-role"
-                        className={`py-2 px-4 rounded-lg block ${isActive("/admin/setting-role") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                        className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-role") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
                     >
-                        Role & Permission
+                        តួនាទី & ការផ្តល់សិទ្ធ
                     </Link>
 
                     {/* Department */}
                     <Link
                         to="/admin/setting-user-management"
-                        className={`py-2 px-4 rounded-lg block ${isActive("/admin/setting-user-management") ? "bg-green-600 text-white" : "text-gray-700 hover:text-gray-900"}`}
+                        className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-user-management") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
                     >
-                        User Management
+                        គ្រប់គ្រងអ្នកប្រើប្រាស់
                     </Link>
                 </div>
 
@@ -41,9 +41,9 @@ export default function ToolBarUserManagement() {
                     {/* Add New Course */}
                     <Link
                         to="/admin/users-create">
-                        <button className="bg-blue-500 text-white py-2 px-3 rounded-lg flex items-center">
+                        <button className="bg-gray-300 text-gray-900 shadow-md py-2 px-3 rounded-md flex items-center">
                             <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
-                            New User
+                            បង្កើតថ្មី
                         </button>
                     </Link>
                 </div>

@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
 
         {/* Main Content */}
-        <div className="col-span-5 row-span-1 bg-gray-300">
+        <div className="col-span-5 row-span-1 bg-gray-200">
           <div className="grid place-items-center">
             <div className="text-center mt-9">
               {/* Corrected image src reference */}
@@ -30,18 +30,18 @@ export default function HomePage() {
                 alt="EduFlex"
                 className="mx-auto w-96 h-80"
               />
-              <h1 className="text-center text-4xl font-bold">
-                Welcome to EduFlex
+              <h1 className="text-center text-4xl font-bold font-suwannaphum p-4">
+                សូមស្វាគមន៍មកកាន់ EduFlex
               </h1>
-              <span className="text-blue-800 font-thin text-xl">
-                Learning Management System
+              <span className="text-blue-900 font-suwannaphum text-xl p-3 bg-gray-200">
+                ប្រព័ន្ធគ្រប់គ្រងការរៀន
               </span>
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="col-span-5 bg-gray-300">
+        <div className="col-span-5 bg-gray-200">
           <FooterHome />
         </div>
       </div>
