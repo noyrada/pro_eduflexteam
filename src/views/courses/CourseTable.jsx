@@ -8,14 +8,14 @@ import PaginationCourse from "../../components/Paginations/PaginationCourse";
 export default function CourseTable() {
     return (
         <>
-            <div className="grid grid-rows-[auto,auto,1fr] mx-8">
+            <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
                 {/* Breadcrumb */}
                 <div className="text-md mb-3">
-                    <p>Home / Table</p>
+                    <p>ទំព័រដើម / តារាង</p>
                 </div>
 
                 {/* Tool Bar */}
-                <div className="shadow-sm">
+                <div className="">
                     <CardToolBar />
                 </div>
 
