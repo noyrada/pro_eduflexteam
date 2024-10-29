@@ -54,8 +54,8 @@ export default function Courses() {
                 </div>
 
                 {/* Pagination */}
-                <div className="flex justify-center items-center mt-2 w-full">
-                    <div className="flex items-center gap-2 p-2 bg-white shadow-sm rounded-lg border border-gray-200">
+                <div className="flex justify-center items-center mt-1 w-full">
+                    <div className="flex items-center gap-2 p-2 bg-white shadow-sm rounded-md border border-gray-200 font-suwannaphum text-sm">
                         <PaginationCourse />
                     </div>
                 </div>

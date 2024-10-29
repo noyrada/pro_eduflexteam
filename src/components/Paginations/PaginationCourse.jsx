@@ -11,7 +11,7 @@ export default function PaginationCourse() {
         onClick: () => setActive(index),
         className: `transition-all duration-200 ease-in-out
                     ${active === index ? 'bg-blue-600 text-white' : 'bg-gray-100 text-black hover:bg-gray-200'}
-                    w-10 h-10 flex items-center justify-center rounded-full`
+                    w-8 h-8 flex items-center justify-center rounded-full`
     });
 
     const next = () => {
@@ -29,12 +29,12 @@ export default function PaginationCourse() {
             {/* button previous */}
             <Button
                 variant="text"
-                className="flex items-center mr-2 gap-2 text-gray-600 p-2 rounded-lg hover:bg-gray-200"
+                className="flex items-center mr-2 gap-2 text-gray-600 p-2 rounded-md hover:bg-gray-200"
                 onClick={prev}
                 disabled={active === 1}
             >
                 <ArrowLeftIcon strokeWidth={2} className="h-5 w-5" />
-                Previous
+                ថយក្រោយ
             </Button>
             {/* number page */}
             <div className="flex items-center gap-2">
@@ -47,11 +47,11 @@ export default function PaginationCourse() {
             {/* button next */}
             <Button
                 variant="text"
-                className="flex items-center ml-2 gap-2 text-gray-600 p-2 rounded-lg hover:bg-gray-200"
+                className="flex items-center ml-2 gap-2 text-gray-600 p-2 rounded-md hover:bg-gray-200"
                 onClick={next}
                 disabled={active === 5}
             >
-                Next
+                ទៅមុខ
                 <ArrowRightIcon strokeWidth={2} className="h-5 w-5" />
             </Button>
         </div>
