@@ -27,8 +27,8 @@ export default function CourseAssign() {
                 </div>
 
                 {/* Pagination */}
-                <div className="flex justify-center items-center mt-8 w-full">
-                    <div className="flex items-center gap-2 p-2 bg-white shadow-sm rounded-lg border border-gray-200">
+                <div className="flex justify-center items-center mt-7 w-full">
+                    <div className="flex items-center gap-2 p-2 bg-white shadow-sm rounded-md border border-gray-200">
                         <PaginationCourse />
                     </div>
                 </div>
