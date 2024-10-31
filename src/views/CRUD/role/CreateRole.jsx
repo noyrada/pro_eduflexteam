@@ -24,7 +24,7 @@ export default function CreateRole({ isOpen, onClose, onSubmit }) {
     if (!isOpen) return null;
     return (
         <>
-            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 z-50">
+            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 z-50 font-sans">
                 <div className="bg-white p-6 rounded-lg w-[40%] mx-4 shadow-lg h-[50%]">
                     <h3 className="text-lg font-semibold mb-2 text-center">Add New Role</h3>
                     <form onSubmit={handleSubmit} className="space-y-4">

@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         suwannaphum: ['"Suwannaphum"', 'sans-serif'],
+        sans: ["Roboto", "sans-serif"],
       },
       
       height: {
