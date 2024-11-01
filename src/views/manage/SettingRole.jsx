@@ -9,7 +9,7 @@ export default function SettingPage() {
             <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
                 {/* Breadcrumb */}
                 <div className="text-md mb-3">
-                    <p>តួនាទី / ការផ្តល់សិទ្ធ</p>
+                    <p>តួនាទី / ការអនុញ្ញាត</p>
                 </div>
 
                 {/* Tool Bar */}
@@ -20,7 +20,7 @@ export default function SettingPage() {
                 {/* Content Area with Cards */}
                 <div className="bg-white shadow-sm rounded-md mt-2">
                     <div className="h-screen">
-                        តួនាទី & ការផ្តល់សិទ្ធ
+                        តួនាទីនិងការអនុញ្ញាត
                     </div>
                 </div>
             </div>
