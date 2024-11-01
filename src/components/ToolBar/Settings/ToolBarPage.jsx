@@ -11,22 +11,22 @@ export default function ToolBarPage() {
             <div className="flex justify-between items-center">
                 {/* Left Side */}
                 <div className="flex space-x-4">
-                    {/* users */}
+                    {/* Page Management */}
                     <Link
                         to="/admin/setting-page"
                         className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-page") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
                     >
                         គ្រប់គ្រងទំព័រ
                     </Link>
-                    {/* User Roles */}
+                    {/* Role and Permission*/}
                     <Link
                         to="/admin/setting-role"
                         className={`py-2 px-4 rounded-md block ${isActive("/admin/settings-role") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
                     >
-                        តួនាទី & ការផ្តល់សិទ្ធ
+                        តួនាទីនិង ​ការអនុញ្ញាត
                     </Link>
 
-                    {/* Department */}
+                    {/* User Management */}
                     <Link
                         to="/admin/setting-user-management"
                         className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-user-management") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}

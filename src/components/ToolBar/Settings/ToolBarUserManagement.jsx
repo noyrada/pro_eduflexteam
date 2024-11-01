@@ -23,7 +23,7 @@ export default function ToolBarUserManagement() {
                         to="/admin/setting-role"
                         className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-role") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
                     >
-                        តួនាទី & ការផ្តល់សិទ្ធ
+                        តួនាទីនិង ​ការអនុញ្ញាត
                     </Link>
 
                     {/* Department */}

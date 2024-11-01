@@ -35,12 +35,6 @@
       "RoleName": "heek",
       "Description": "real project for project web year 4 of rupp",
       "TotalUser": "fffff"
-    },
-    {
-      "id": "2033",
-      "RoleName": "modelRole",
-      "Description": "role descripton",
-      "TotalUser": "optional"
     }
   ]
 }
