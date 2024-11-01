@@ -1,4 +1,4 @@
-import data from './RoleData.json';
+import data from '../../../models/modelRole.json';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Checkbox from '@mui/material/Checkbox';
