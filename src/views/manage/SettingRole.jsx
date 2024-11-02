@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import Checkbox from '@mui/material/Checkbox';
-import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // component 
 import data from '../../models/modelRole.json';
@@ -11,9 +11,8 @@ const roles = data.Roles;
 export default function SettingPage() {
 
     const [data, setData] = useState([])
-    const { id } = useParams();
     useEffect(() => {
-        axios.get('http://localhost:3000/Roles/' + id)
+        axios.get('http://localhost:3000/Roles')
             .then(res => setData(res.data))
             .catch(err => console.log(err));
     }, [])
@@ -63,12 +62,18 @@ export default function SettingPage() {
 
                                         <td className="text-center pr-6 text-lg border-b">
                                             <div className="flex justify-center space-x-6">
-                                                <div className="cursor-pointer text-blue-600">
-                                                    <ion-icon name="create-outline" />
-                                                </div>
-                                                <div className="cursor-pointer text-gray-600">
-                                                    <ion-icon name="settings-outline" />
-                                                </div>
+                                                <Link to="/admin/users-role">
+                                                    <div className="cursor-pointer text-blue-600">
+                                                        <ion-icon name="create-outline" />
+                                                    </div>
+                                                </Link>
+
+                                                <Link to="/admin/users-role">
+                                                    <div className="cursor-pointer text-gray-600">
+                                                        <ion-icon name="settings-outline" />
+                                                    </div>
+                                                </Link>
+
                                             </div>
                                         </td>
                                     </tr>
