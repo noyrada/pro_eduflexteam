@@ -40,7 +40,7 @@ export default function ToolBarRole() {
 
                     {/* Add New Course */}
                     <Link
-                        to="/admin/users-role-create">
+                        to="/admin/users-role">
                         <button className="bg-gray-300 text-gray-900 shadow-md py-2 px-3 rounded-md flex items-center">
                             <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
                             បង្កើតថ្មី
