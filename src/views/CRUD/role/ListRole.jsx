@@ -3,12 +3,15 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Checkbox from '@mui/material/Checkbox';
 import CardToolBarRole from "../../../components/ToolBar/CardToolBarRole";
+import { useParams } from 'react-router-dom';
+
 // component 
 const roles = data.Roles;
 export default function ListRole() {
     const [data, setData] = useState([])
+    const {id}=useParams();
     useEffect(() => {
-        axios.get('http://localhost:3000/Roles')
+        axios.get('http://localhost:3000/Roles/'+id)
             .then(res => setData(res.data))
             .catch(err => console.log(err));
     }, [])
@@ -39,20 +42,25 @@ export default function ListRole() {
                                     </th>
                                     <th className="text-left pl-16 py-1 px-4 font-bold  text-gray-600 border-b">Description</th>
                                     <th className="text-left pl-10 py-1 px-4 font-bold  text-gray-600 border-b">Total User</th>
-                                    <th className="text-left pl-16 py-1 px-4 font-bold  text-gray-600 border-b">Edit</th>
+                                    <th className="text-center pr-6 font-bold  text-gray-600 border-b ">Edit</th>
+                                    <th className="text-left font-bold  text-gray-600 border-b ">Delete</th>
                                 </tr>
                             </thead>
                             <tbody >
                                 {roles.map((role) => (
                                     <tr key={role.id}>
-                                        <td className="text-left pl-16 py-1 px-4 text-gray-600 border-b flex">
+                                        <td className="text-left pl-16 py-1 px-4 text-gray-600 border-b flex ">
                                             <div className='mr-8 '><Checkbox /></div>
                                             <div className='mt-2.5'>{role.RoleName}</div>
                                         </td>
-                                        <td className="text-left pl-16 py-1 px-4 text-gray-600 border-b">{role.Description}</td>
-                                        <td className="text-left pl-16 py-1 px-4 text-gray-600 border-b">{role.TotalUser}</td>
-                                        <td className="text-left pl-16 py-1 px-4 text-2xl border-b text-blue-800 ">
-                                            <div className='cursor-pointer'><ion-icon name="create-outline" /></div>
+                                        <td className="text-left py-1 px-4 text-gray-600 border-b ">{role.Description}</td>
+                                        <td className="text-left pl-16 py-1 px-4 text-gray-600 border-b ">{role.TotalUser}</td>
+                                        
+                                        <td className="text-center pr-6 text-2xl border-b text-blue-800">
+                                            <div className='cursor-pointer  '><ion-icon name="create-outline" /></div>
+                                        </td>
+                                        <td className="text-left pr-6 text-2xl border-b text-rose-700">
+                                            <div className='cursor-pointer '><ion-icon name="trash-outline" className="cursor-pointer"></ion-icon></div>
                                         </td>
                                     </tr>
                                 ))}
@@ -64,3 +72,5 @@ export default function ListRole() {
         </>
     )
 }
+
+
