@@ -1,0 +1,32 @@
+{
+  "Department": [
+    {
+      "Id": "1",
+      "DepartmentName": "IT",
+      "Description": "Department is dedicated to promoting our brand ...",
+      "TotalUser": "15",
+      "id": "06f9"
+    },
+    {
+      "Id": "2",
+      "DepartmentName": "HR",
+      "Description": "Department is dedicated to promoting our brand ...",
+      "TotalUser": "10",
+      "id": "ae23"
+    },
+    {
+      "Id": "3",
+      "DepartmentName": "Marketing",
+      "Description": "Department is dedicated to promoting our brand ...",
+      "TotalUser": "20",
+      "id": "76cc"
+    },
+    {
+      "Id": "4",
+      "DepartmentName": "Accounting",
+      "Description": "Department is dedicated to promoting our brand ...",
+      "TotalUser": "30",
+      "id": "cee7"
+    }
+  ]
+}
