@@ -67,24 +67,7 @@ export default function CreateDepartment({ isOpen, onClose, onSubmit }) {
                 required
               />
             </div>
-            <div>
-              <label
-                className="block text-gray-700 font-medium mb-1"
-                htmlFor="departmentName"
-              >
-                Total User
-              </label>
-              <input
-                type="text"
-                name="TotalUser"
-                className="w-full p-2 border form-control border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                placeholder="Enter total user"
-                onChange={(e) =>
-                  setValues({ ...values, TotalUser: e.target.value })
-                }
-                required
-              />
-            </div>
+            
             <div className="flex justify-end space-x-2">
               <button
                 type="button"

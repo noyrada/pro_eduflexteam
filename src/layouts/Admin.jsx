@@ -25,6 +25,7 @@ import CreateRole from "../views/CRUD/role/CreateRole.jsx";
 import UpdateRole from "../views/CRUD/role/UpdateRole.jsx";
 
 import ListDepartment from '../views/CRUD/department/ListDepartment.jsx';
+import UpdateDepartment from '../views/CRUD/department/UpdateDepartment.jsx'
 import CreateCourse from "../views/CRUD/course/CreateCourse.jsx";
 
 // Report
@@ -73,6 +74,7 @@ export default function Admin() {
                         <Route path="/users-role-edit" element={<UpdateRole />} />
 
                         <Route path="/users-department" element={<ListDepartment />} />
+                        <Route path="/users-department-edit" element={<UpdateDepartment />} />
 
                         {/* Reports */}
                         <Route path="/reports" element={<Report />} />

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import data from "../../../models/modelDepartment.json";
 import Checkbox from "@mui/material/Checkbox";
 import CardToolBarDepartment from "../../../components/ToolBar/CardToolBarDepartment";
@@ -51,6 +52,7 @@ export default function Departments() {
                   <th className="text-left pl-16 py-1 px-4 font-bold text-gray-600 border-b">
                     Edit
                   </th>
+                  <th className="text-left font-bold  text-gray-600 border-b ">Delete</th>
                 </tr>
               </thead>
               <tbody>
@@ -69,9 +71,15 @@ export default function Departments() {
                       {department.TotalUser}
                     </td>
                     <td className="text-left pl-16 py-1 px-4 text-2xl border-b text-blue-800 ">
-                      <div className="cursor-pointer">
-                        <ion-icon name="create-outline" />
-                      </div>
+                      <Link to="/admin/users-department-edit">
+                        <div className="cursor-pointer">
+                          <ion-icon name="create-outline" />
+                        </div>
+                      </Link>
+
+                    </td>
+                    <td className="text-left pr-6 text-2xl border-b text-rose-700">
+                      <div className='cursor-pointer '><ion-icon name="trash-outline" className="cursor-pointer"></ion-icon></div>
                     </td>
                   </tr>
                 ))}
