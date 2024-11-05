@@ -3,15 +3,15 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Checkbox from '@mui/material/Checkbox';
 import CardToolBarRole from "../../../components/ToolBar/CardToolBarRole";
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 // component 
 const roles = data.Roles;
 export default function ListRole() {
     const [data, setData] = useState([])
-    const {id}=useParams();
+    const { id } = useParams();
     useEffect(() => {
-        axios.get('http://localhost:3000/Roles/'+id)
+        axios.get('http://localhost:3000/Roles/')
             .then(res => setData(res.data))
             .catch(err => console.log(err));
     }, [])
@@ -55,9 +55,15 @@ export default function ListRole() {
                                         </td>
                                         <td className="text-left py-1 px-4 text-gray-600 border-b ">{role.Description}</td>
                                         <td className="text-left pl-16 py-1 px-4 text-gray-600 border-b ">{role.TotalUser}</td>
-                                        
+
                                         <td className="text-center pr-6 text-2xl border-b text-blue-800">
-                                            <div className='cursor-pointer  '><ion-icon name="create-outline" /></div>
+
+                                            <Link to="/admin/users-role-edit">
+                                                <div className='cursor-pointer  '>
+                                                    <ion-icon name="create-outline" />
+                                                </div>
+                                            </Link>
+
                                         </td>
                                         <td className="text-left pr-6 text-2xl border-b text-rose-700">
                                             <div className='cursor-pointer '><ion-icon name="trash-outline" className="cursor-pointer"></ion-icon></div>

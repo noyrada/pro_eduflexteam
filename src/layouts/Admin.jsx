@@ -22,6 +22,7 @@ import CreateUser from "../views/CRUD/user/CreateUser.jsx";
 
 import ListRole from "../views/CRUD/role/ListRole.jsx";
 import CreateRole from "../views/CRUD/role/CreateRole.jsx";
+import UpdateRole from "../views/CRUD/role/UpdateRole.jsx";
 
 import ListDepartment from '../views/CRUD/department/ListDepartment.jsx';
 import CreateCourse from "../views/CRUD/course/CreateCourse.jsx";
@@ -69,6 +70,7 @@ export default function Admin() {
 
                         <Route path="/users-role" element={<ListRole />} />
                         <Route path="/users-role-create" element={<CreateRole />} />
+                        <Route path="/users-role-edit" element={<UpdateRole />} />
 
                         <Route path="/users-department" element={<ListDepartment />} />
 
