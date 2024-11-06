@@ -3,19 +3,28 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Checkbox from '@mui/material/Checkbox';
 import CardToolBarRole from "../../../components/ToolBar/CardToolBarRole";
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 
 // component 
 const roles = data.Roles;
 export default function ListRole() {
     const [data, setData] = useState([])
     const { id } = useParams();
+    const navigate=useNavigate();
     useEffect(() => {
-        axios.get('http://localhost:3000/Roles/')
+        axios.get('http://localhost:3000/Roles')
             .then(res => setData(res.data))
             .catch(err => console.log(err));
     }, [])
-
+    const handleDelete=(id)=>{
+        const confirm=window.confirm("Would you like to Delete?");
+        if(confirm){
+            axios.delete('http://localhost:3000/Roles/'+id)
+            .then(res=>{
+                navigate('/admin/users-role')
+            }).catch(err=>console.log(err));
+        }
+    }
     return (
         <>
             <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
@@ -58,7 +67,7 @@ export default function ListRole() {
 
                                         <td className="text-center pr-6 text-2xl border-b text-blue-800">
 
-                                            <Link to="/admin/users-role-edit">
+                                            <Link to={`/admin/users-role-edit/${role.id}`}>
                                                 <div className='cursor-pointer  '>
                                                     <ion-icon name="create-outline" />
                                                 </div>
@@ -66,7 +75,7 @@ export default function ListRole() {
 
                                         </td>
                                         <td className="text-left pr-6 text-2xl border-b text-rose-700">
-                                            <div className='cursor-pointer '><ion-icon name="trash-outline" className="cursor-pointer"></ion-icon></div>
+                                            <button onClick={e=>handleDelete(role.id)}><div className='cursor-pointer '><ion-icon name="trash-outline" className="cursor-pointer"></ion-icon></div></button>
                                         </td>
                                     </tr>
                                 ))}

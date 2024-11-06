@@ -73,7 +73,7 @@ export default function Admin() {
 
                         <Route path="/users-role" element={<ListRole />} />
                         <Route path="/users-role-create" element={<CreateRole />} />
-                        <Route path="/users-role-edit" element={<UpdateRole />} />
+                        <Route path="/users-role-edit/:id" element={<UpdateRole />} />
 
                         <Route path="/users-department" element={<ListDepartment />} />
                         <Route path="/users-department-edit" element={<UpdateDepartment />} />
