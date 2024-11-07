@@ -1,32 +1,28 @@
 {
   "Department": [
     {
-      "Id": "1",
+      "id": "7ecd",
       "DepartmentName": "IT",
       "Description": "Department is dedicated to promoting our brand ...",
-      "TotalUser": "15",
-      "id": "06f9"
+      "TotalUser": "15"
     },
     {
-      "Id": "2",
+      "id": "00f4",
       "DepartmentName": "HR",
       "Description": "Department is dedicated to promoting our brand ...",
-      "TotalUser": "10",
-      "id": "ae23"
+      "TotalUser": "10"
     },
     {
-      "Id": "3",
+      "id": "9118",
       "DepartmentName": "Marketing",
       "Description": "Department is dedicated to promoting our brand ...",
-      "TotalUser": "20",
-      "id": "76cc"
+      "TotalUser": "20"
     },
     {
-      "Id": "4",
+      "id": "61c6",
       "DepartmentName": "Accounting",
       "Description": "Department is dedicated to promoting our brand ...",
-      "TotalUser": "30",
-      "id": "cee7"
+      "TotalUser": "30"
     }
   ]
 }

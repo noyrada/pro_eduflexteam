@@ -8,7 +8,6 @@ export default function CreateDepartment({ isOpen, onClose, onSubmit }) {
   const [values, setValues] = useState({
     DepartmentName: "",
     Description: "",
-    TotalUser: "",
   });
   const navigate = useNavigate();
   const handleSubmit = (event) => {
@@ -67,7 +66,7 @@ export default function CreateDepartment({ isOpen, onClose, onSubmit }) {
                 required
               />
             </div>
-            
+
             <div className="flex justify-end space-x-2">
               <button
                 type="button"
