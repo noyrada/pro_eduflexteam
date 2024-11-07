@@ -10,9 +10,6 @@ export default function Auth() {
             {/* component */}
             <main>
                 <section>
-                    <div>
-                        This is page for login.
-                    </div>
                     <Routes>
                         {/* Route for login */}
                         <Route path="/login" element={<Login />} />
