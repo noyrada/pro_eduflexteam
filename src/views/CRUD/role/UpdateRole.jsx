@@ -40,7 +40,7 @@ export default function UpdateRole() {
                 <div className="bg-white shadow-sm rounded-md mt-2 font-sans">
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 z-50 font-sans">
                     <div className="bg-white p-6 rounded-lg w-[40%] mx-4 shadow-lg h-[50%]">
-                        <h3 className="text-lg font-semibold mb-2 text-center">Update User</h3>
+                        <h3 className="text-lg font-semibold mb-2 text-center">Update Role</h3>
                         <form onSubmit={handleUpdate} className="space-y-4">
                         <div >
                         <label className="block text-gray-700 font-medium mb-1" htmlFor="roleName">

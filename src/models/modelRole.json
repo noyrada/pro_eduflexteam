@@ -1,18 +1,6 @@
 {
   "Roles": [
     {
-      "id": "1",
-      "RoleName": "Administrator",
-      "Description": "The user will have full access to account",
-      "TotalUser": "1"
-    },
-    {
-      "id": "2",
-      "RoleName": "Supervisor",
-      "Description": "The user will have full access to account",
-      "TotalUser": "2"
-    },
-    {
       "id": "3",
       "RoleName": "Department Admin",
       "Description": "The user will have full access to account",
@@ -23,12 +11,6 @@
       "RoleName": "Staff",
       "Description": "The user will have full access to account",
       "TotalUser": "4"
-    },
-    {
-      "id": "023e",
-      "RoleName": "ggg",
-      "Description": "Build Application for helpful student E-Learning",
-      "TotalUser": "test"
     }
   ]
 }
