@@ -72,16 +72,13 @@ export default function Admin() {
             <Route path="/users-create" element={<CreateUser />} />
             <Route path="/users-edit" element={<UpdateUser />} />
 
-                        <Route path="/users-role" element={<ListRole />} />
-                        <Route path="/users-role-create" element={<CreateRole />} />
-                        <Route path="/users-role-edit/:id" element={<UpdateRole />} />
-                        <Route path="/users-role-delete/:id" element={<DeleteRole />} />
+            <Route path="/users-role" element={<ListRole />} />
+            <Route path="/users-role-create" element={<CreateRole />} />
+            <Route path="/users-role-edit/:id" element={<UpdateRole />} />
+            <Route path="/users-role-delete/:id" element={<DeleteRole />} />
 
             <Route path="/users-department" element={<ListDepartment />} />
-            <Route
-              path="/users-department-edit/:id"
-              element={<UpdateDepartment />}
-            />
+            <Route path="/users-department-edit/:id"element={<UpdateDepartment />}/>
 
             {/* Reports */}
             <Route path="/reports" element={<Report />} />
@@ -89,10 +86,7 @@ export default function Admin() {
             {/* Settings */}
             <Route path="/setting-page" element={<SettingPage />} />
             <Route path="/setting-role" element={<SettingRole />} />
-            <Route
-              path="/setting-user-management"
-              element={<UserManagement />}
-            />
+            <Route path="/setting-user-management"element={<UserManagement />}/>
 
             {/* Redirect from /admin to /admin/dashboard */}
             <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />
