@@ -24,6 +24,7 @@ import UpdateUser from "../views/CRUD/user/UpdateUser.jsx";
 import ListRole from "../views/CRUD/role/ListRole.jsx";
 import CreateRole from "../views/CRUD/role/CreateRole.jsx";
 import UpdateRole from "../views/CRUD/role/UpdateRole.jsx";
+import DeleteRole from "../views/CRUD/role/DeleteRole.jsx";
 
 import ListDepartment from "../views/CRUD/department/ListDepartment.jsx";
 import UpdateDepartment from "../views/CRUD/department/UpdateDepartment.jsx";
@@ -71,9 +72,10 @@ export default function Admin() {
             <Route path="/users-create" element={<CreateUser />} />
             <Route path="/users-edit" element={<UpdateUser />} />
 
-            <Route path="/users-role" element={<ListRole />} />
-            <Route path="/users-role-create" element={<CreateRole />} />
-            <Route path="/users-role-edit/:id" element={<UpdateRole />} />
+                        <Route path="/users-role" element={<ListRole />} />
+                        <Route path="/users-role-create" element={<CreateRole />} />
+                        <Route path="/users-role-edit/:id" element={<UpdateRole />} />
+                        <Route path="/users-role-delete/:id" element={<DeleteRole />} />
 
             <Route path="/users-department" element={<ListDepartment />} />
             <Route
