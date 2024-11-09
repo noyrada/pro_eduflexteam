@@ -1,370 +1,85 @@
+import data from "../../../models/modelUser.json";
 import React from "react";
+import Checkbox from "@mui/material/Checkbox";
+import CardToolBarUser from "../../../components/ToolBar/CardToolBarUser";
 import { Link } from "react-router-dom";
 
 // component
-import CardToolBarUser from "../../../components/ToolBar/CardToolBarUser";
-
-export default function ViewUser() {
+const users = data.Users;
+export default function CreateUser() {
   return (
     <>
-      <div className="grid grid-rows-[auto,auto,1fr] mx-10 font-suwannaphum text-sm">
+      <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
         {/* Breadcrumb */}
         <div className="text-md mb-3">
-          <p>ទំព័រដើម / អ្នកប្រើប្រាស់់</p>
+          <p>ទំព័ដើម / តួនាទី</p>
         </div>
 
         {/* Tool Bar */}
-        <div className="">
+        <div className="shadow-sm">
           <CardToolBarUser />
         </div>
 
         {/* Content Area with Cards */}
-        <div className="bg-white shadow-sm rounded-md mt-2">
-          <div className="h-screen">
-            <div>
-              <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
-                <div className="inline-block min-w-full shadow rounded-lg">
-                  <table className="min-w-full leading-normal">
-                    <thead>
-                      <tr>
-                        <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                          User Name
-                        </th>
-                        <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                          Role
-                        </th>
-                        <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                          Department
-                        </th>
-                        <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                          Status
-                        </th>
-                        <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                          Edit
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <div className="flex items-center">
-                            <div className="flex-shrink-0 w-10 h-10">
-                              <img
-                                className="w-full h-full rounded-full"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
-                                alt=""
-                              />
-                            </div>
-                            <div className="ml-3">
-                              <p className="text-gray-900 whitespace-no-wrap">
-                                Chea Nika
-                              </p>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Staff
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Information Technology
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <span className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                            <span
-                              aria-hidden
-                              className="absolute inset-0 bg-green-200 opacity-50 rounded-full"
-                            ></span>
-                            <span className="relative">Active</span>
-                          </span>
-                        </td>
-                        <td className="text-center pr-6 text-2xl border-b text-blue-800">
-                          <div className="cursor-pointer  ">
-                            <ion-icon name="create-outline" />
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <div className="flex items-center">
-                            <div className="flex-shrink-0 w-10 h-10">
-                              <img
-                                className="w-full h-full rounded-full"
-                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
-                                alt=""
-                              />
-                            </div>
-                            <div className="ml-3">
-                              <p className="text-gray-900 whitespace-no-wrap">
-                                Noy Rada
-                              </p>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            CEO
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Information Technology
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <span className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                            <span
-                              aria-hidden
-                              className="absolute inset-0 bg-green-200 opacity-50 rounded-full"
-                            ></span>
-                            <span className="relative">Active</span>
-                          </span>
-                        </td>
-                        <td className="text-center pr-6 text-2xl border-b text-blue-800">
-                          <div className="cursor-pointer  ">
-                            <ion-icon name="create-outline" />
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <div className="flex items-center">
-                            <div className="flex-shrink-0 w-10 h-10">
-                              <img
-                                className="w-full h-full rounded-full"
-                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
-                                alt=""
-                              />
-                            </div>
-                            <div className="ml-3">
-                              <p className="text-gray-900 whitespace-no-wrap">
-                                Chhorn Seyha
-                              </p>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Intern
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Information Technology
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <span className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                            <span
-                              aria-hidden
-                              className="absolute inset-0 bg-green-200 opacity-50 rounded-full"
-                            ></span>
-                            <span className="relative">Active</span>
-                          </span>
-                        </td>
-                        <td className="text-center pr-6 text-2xl border-b text-blue-800">
-                          <div className="cursor-pointer  ">
-                            <ion-icon name="create-outline" />
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <div className="flex items-center">
-                            <div className="flex-shrink-0 w-10 h-10">
-                              <img
-                                className="w-full h-full rounded-full"
-                                src="https://images.unsplash.com/photo-1522609925277-66fea332c575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&h=160&w=160&q=80"
-                                alt=""
-                              />
-                            </div>
-                            <div className="ml-3">
-                              <p className="text-gray-900 whitespace-no-wrap">
-                                Touch Bunthorng
-                              </p>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Senior Staff
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Information Technology
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <span className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                            <span
-                              aria-hidden
-                              className="absolute inset-0 bg-green-200 opacity-50 rounded-full"
-                            ></span>
-                            <span className="relative">Active</span>
-                          </span>
-                        </td>
-                        <td className="text-center pr-6 text-2xl border-b text-blue-800">
-                          <div className="cursor-pointer  ">
-                            <ion-icon name="create-outline" />
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <div className="flex items-center">
-                            <div className="flex-shrink-0 w-10 h-10">
-                              <img
-                                className="w-full h-full rounded-full"
-                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
-                                alt=""
-                              />
-                            </div>
-                            <div className="ml-3">
-                              <p className="text-gray-900 whitespace-no-wrap">
-                                Chon Lymeng
-                              </p>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Staff
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Information Technology
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <span className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                            <span
-                              aria-hidden
-                              className="absolute inset-0 bg-green-200 opacity-50 rounded-full"
-                            ></span>
-                            <span className="relative">Active</span>
-                          </span>
-                        </td>
-                        <td className="text-center pr-6 text-2xl border-b text-blue-800">
-                          <div className="cursor-pointer  ">
-                            <ion-icon name="create-outline" />
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <div className="flex items-center">
-                            <div className="flex-shrink-0 w-10 h-10">
-                              <img
-                                className="w-full h-full rounded-full"
-                                src="https://images.unsplash.com/photo-1540845511934-7721dd7adec3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
-                                alt=""
-                              />
-                            </div>
-                            <div className="ml-3">
-                              <p className="text-gray-900 whitespace-no-wrap">
-                                Chhun Chhengkea
-                              </p>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Staff
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Information Technology
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <span className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                            <span
-                              aria-hidden
-                              className="absolute inset-0 bg-green-200 opacity-50 rounded-full"
-                            ></span>
-                            <span className="relative">Active</span>
-                          </span>
-                        </td>
-                        <td className="text-center pr-6 text-2xl border-b text-blue-800">
-                          <div className="cursor-pointer  ">
-                            <ion-icon name="create-outline" />
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <div className="flex items-center">
-                            <div className="flex-shrink-0 w-10 h-10">
-                              <img
-                                className="w-full h-full rounded-full"
-                                src="https://images.unsplash.com/photo-1522609925277-66fea332c575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&h=160&w=160&q=80"
-                                alt=""
-                              />
-                            </div>
-                            <div className="ml-3">
-                              <p className="text-gray-900 whitespace-no-wrap">
-                                Chea Sovannara
-                              </p>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Staff
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <p className="text-gray-900 whitespace-no-wrap">
-                            Information Technology
-                          </p>
-                        </td>
-                        <td className="px-3 py-3 border-b border-gray-200 bg-white text-sm">
-                          <span className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                            <span
-                              aria-hidden
-                              className="absolute inset-0 bg-green-200 opacity-50 rounded-full"
-                            ></span>
-                            <span className="relative">Active</span>
-                          </span>
-                        </td>
-                        <td className="text-center pr-6 text-2xl border-b text-blue-800">
-                          <Link to="/admin/users-edit">
-                            <div className="cursor-pointer  ">
-                              <ion-icon name="create-outline" />
-                            </div>
-                          </Link>
-                        </td>
-                      </tr>
-
-                      {/* Repeat rows as needed */}
-                    </tbody>
-                  </table>
-                  <div className="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between">
-                    <span className="text-xs xs:text-sm text-gray-900">
-                      Showing 1 to 4 of 50 Entries
-                    </span>
-                    <div className="inline-flex mt-2 xs:mt-0">
-                      <button className="text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-l">
-                        Prev
-                      </button>
-                      <button className="text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-r">
-                        Next
-                      </button>
+        <div className="bg-white shadow-sm rounded-md mt-2 font-sans">
+          <div>
+            <table className="min-w-full border-collapse">
+              <thead className="bg-gray-200">
+                <tr>
+                  <th className="text-left pl-16 py-1 px-4 font-bold text-gray-600 border-b flex">
+                    <div className="mr-8">
+                      <Checkbox />
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    <div className="mt-2.5">User Name</div>
+                    <div className="text-xl mt-2 ml-2">
+                      <ion-icon name="arrow-up-outline"></ion-icon>
+                    </div>
+                  </th>
+                  <th className="text-left pl-10 py-1 px-4 font-bold text-gray-600 border-b">
+                    Department
+                  </th>
+                  <th className="text-left pl-10 py-1 px-4 font-bold text-gray-600 border-b">
+                    Status
+                  </th>
+                  <th className="text-left pl-10 py-1 px-4 font-bold text-gray-600 border-b">
+                    Role
+                  </th>
+                  <th className="text-left pl-3.5 font-bold text-gray-600 border-b">
+                    Edit
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {users.map((user) => (
+                  <tr key={user.id}>
+                    <td className="text-left pl-16 py-4 px-4 text-gray-600 border-b flex">
+                      <div className="mr-8">
+                        <Checkbox />
+                      </div>
+                      <div className="mt-2.5">{user.UserName}</div>
+                    </td>
+                    <td className="text-left pl-16 py-2 px-4 text-gray-600 border-b">
+                      {user.Department}
+                    </td>
+                    <td className="text-left pl-10 py-1 px-4 text-gray-600 border-b">
+                      {user.Status}
+                    </td>
+                    <td className="text-left pl-10 py-1 px-4 text-gray-600 border-b">
+                      {user.RoleName}
+                    </td>
+                    <td className="py-3 px-4 border-b">
+                      <Link to={`/admin/users-edit/${user.id}`}>
+                        <button className="text-blue-600 hover:text-blue-800 mr-2">
+                          <div className="cursor-pointer text-xl">
+                            <ion-icon name="create-outline" />
+                          </div>
+                        </button>
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
