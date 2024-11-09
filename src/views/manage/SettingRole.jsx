@@ -8,7 +8,7 @@ import data from '../../models/db.json';
 import ToolBarRole from "../../components/ToolBar/Settings/ToolBarRole";
 
 const roles = data.Roles;
-export default function SettingPage() {
+export default function SettingRole() {
 
     const [data, setData] = useState([])
     useEffect(() => {
