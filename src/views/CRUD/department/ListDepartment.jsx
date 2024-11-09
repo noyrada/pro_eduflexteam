@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import data from "../../../models/modelDepartment.json";
+import data from "../../../models/db.json";
 import Checkbox from "@mui/material/Checkbox";
 import CardToolBarDepartment from "../../../components/ToolBar/CardToolBarDepartment";
 import { useParams, Link, useNavigate } from "react-router-dom";

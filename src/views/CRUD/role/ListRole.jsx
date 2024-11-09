@@ -1,4 +1,4 @@
-import data from '../../../models/modelRole.json';
+import data from '../../../models/db.json';
 import React from 'react';
 import Checkbox from '@mui/material/Checkbox';
 import CardToolBarRole from "../../../components/ToolBar/CardToolBarRole";
