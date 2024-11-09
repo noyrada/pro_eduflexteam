@@ -33,14 +33,14 @@ export default function ListRole() {
                                     </th>
                                     <th className="text-left pl-16 py-1 px-4 font-bold  text-gray-600 border-b">Description</th>
                                     <th className="text-left pl-10 py-1 px-4 font-bold  text-gray-600 border-b">Total User</th>
-                                    <th className="text-left pl-3.5 font-bold  text-gray-600 border-b ">Action</th>
+                                    <th className="text-left px-4 font-bold  text-gray-600 border-b ">Action</th>
                                     
                                 </tr>
                             </thead>
                             <tbody >
                                 {roles.map((role) => (
                                     <tr key={role.id}>
-                                        <td className="text-left pl-16 py-4 px-4 text-gray-600 border-b flex ">
+                                        <td className="text-left pl-16 py-2 px-4 text-gray-600 border-b flex ">
                                             <div className='mr-8 '><Checkbox /></div>
                                             <div className='mt-2.5'>{role.RoleName}</div>
                                         </td>
@@ -49,8 +49,8 @@ export default function ListRole() {
 
                 
 
-                                        <td className="py-3 px-4 border-b">
-                                            <button className="text-blue-600 hover:text-blue-800 mr-2 ">
+                                        <td className="text-left space-x-6 border-b">
+                                            <button className="text-blue-600 hover:text-blue-800 ">
                                                 <Link to={`/admin/users-role-edit/${role.id}`}>
                                                     <div className='cursor-pointer text-xl'>
                                                         <ion-icon name="create-outline" />
@@ -58,9 +58,9 @@ export default function ListRole() {
                                                 </Link>
                                             </button>
 
-                                            <button className="text-red-600 hover:text-red-800">
+                                            <button className="text-red-600 hover:text-red-800 mr-2">
                                                 <Link to={`/admin/users-role-delete/${role.id}`}>
-                                                    <div className='cursor-pointer text-xl '>
+                                                    <div className='cursor-pointer text-xl'>
                                                         <ion-icon name="trash-outline" ></ion-icon>
                                                     </div>
                                                 </Link>
