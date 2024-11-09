@@ -4,7 +4,7 @@ import Checkbox from '@mui/material/Checkbox';
 import { Link } from 'react-router-dom';
 
 // component 
-import data from '../../models/modelRole.json';
+import data from '../../models/db.json';
 import ToolBarRole from "../../components/ToolBar/Settings/ToolBarRole";
 
 const roles = data.Roles;

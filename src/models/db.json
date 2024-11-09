@@ -1,4 +1,25 @@
 {
+  "users": [],
+  "Roles": [
+    {
+      "id": "3",
+      "RoleName": "Department Admin",
+      "Description": "The user will have full access to account",
+      "TotalUser": "3"
+    },
+    {
+      "id": "4",
+      "RoleName": "Staff",
+      "Description": "The user will have full access to account",
+      "TotalUser": "4"
+    },
+    {
+      "id": "87a8",
+      "RoleName": "Admin",
+      "Description": "Role admin",
+      "TotalUser": ""
+    }
+  ],
   "Department": [
     {
       "id": "7ecd",
