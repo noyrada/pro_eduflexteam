@@ -1,4 +1,4 @@
-import data from "../../../models/modelUser.json";
+import data from "../../../models/db.json";
 import React from "react";
 import Checkbox from "@mui/material/Checkbox";
 import CardToolBarUser from "../../../components/ToolBar/CardToolBarUser";
@@ -12,7 +12,7 @@ export default function CreateUser() {
       <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
         {/* Breadcrumb */}
         <div className="text-md mb-3">
-          <p>ទំព័ដើម / តួនាទី</p>
+          <p>ទំព័ដើម / អ្នកប្រើប្រាស់</p>
         </div>
 
         {/* Tool Bar */}

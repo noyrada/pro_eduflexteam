@@ -1,8 +1,31 @@
 {
-  "Users": [
+  "User": [
     {
       "username": "admin",
       "password": "P@ssw0rd"
+    }
+  ],
+  "Users": [
+    {
+      "id": "1",
+      "UserName": "Seyha Chhorn",
+      "Status": "Active",
+      "Department": "IT",
+      "RoleName": "Staff"
+    },
+    {
+      "id": "2",
+      "UserName": "Noy Rada",
+      "Status": "Active",
+      "Department": "HR",
+      "RoleName": "Admin"
+    },
+    {
+      "id": "1",
+      "UserName": "Chea Nika",
+      "Status": "Active",
+      "Department": "IT",
+      "RoleName": "Staff"
     }
   ],
   "Roles": [
@@ -22,6 +45,12 @@
       "id": "87a8",
       "RoleName": "Admin",
       "Description": "Role admin",
+      "TotalUser": ""
+    },
+    {
+      "id": "8fc8",
+      "RoleName": "Learner",
+      "Description": "For out of Organization ",
       "TotalUser": ""
     }
   ],
