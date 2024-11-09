@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 //images
 import eduflexlogo from "../../assets/images/EduFlex-logo.png";
@@ -8,14 +9,67 @@ export default function Login() {
     const [username, usernameUpdate] = useState('');
     const [password, passwordUpdate] = useState('');
 
+    const usenavigate = useNavigate();
+
+    useEffect(() => {
+        sessionStorage.clear();
+    }, []);
+
     const ProceedLogin = (e) => {
         e.preventDefault();
         if (validate()) {
-
+            fetch("http://localhost:3000/Users/" + username)
+                .then((res) => {
+                    return res.json();
+                }).then((resp) => {
+                    //console.log(resp)
+                    if (Object.keys(resp).length === 0) {
+                        toast.error('Please Enter valid username');
+                    } else {
+                        if (resp.password === password) {
+                            toast.success('Success');
+                            sessionStorage.setItem('username', username);
+                            // sessionStorage.setItem('userrole', resp.role);
+                            usenavigate('/')
+                        } else {
+                            toast.error('Please Enter valid credentials');
+                        }
+                    }
+                }).catch((err) => {
+                    toast.error('Login Failed due to :' + err.message);
+                });
         }
     }
 
-    const validate=()=>{
+    // const ProceedLoginusingAPI = (e) => {
+    //     e.preventDefault();
+    //     if (validate()) {
+    //         let inputobj={"username": username,
+    //         "password": password};
+    //         fetch("https://localhost:44308/Users/Authenticate",{
+    //             method:'POST',
+    //             headers:{'content-type':'application/json'},
+    //             body:JSON.stringify(inputobj)
+    //         }).then((res) => {
+    //             return res.json();
+    //         }).then((resp) => {
+    //             console.log(resp)
+    //             if (Object.keys(resp).length === 0) {
+    //                 toast.error('Login failed, invalid credentials');
+    //             }else{
+    //                  toast.success('Success');
+    //                  sessionStorage.setItem('username',username);
+    //                  sessionStorage.setItem('jwttoken',resp.jwtToken);
+    //                usenavigate('/')
+    //             }
+
+    //         }).catch((err) => {
+    //             toast.error('Login Failed due to :' + err.message);
+    //         });
+    //     }
+    // }
+
+    const validate = () => {
         let result = true;
         if (username === '' || username === null) {
             result = false;
@@ -27,7 +81,6 @@ export default function Login() {
         }
         return result;
     }
-
     return (
         <>
             <div className="flex justify-center items-center h-screen  p-0 mx-0">
@@ -41,7 +94,7 @@ export default function Login() {
                                 Username or Email <span className="text-red-600">*</span>
                             </label>
                             <input
-                                value={username} onChange={e=>usernameUpdate(e.target.value)}
+                                value={username} onChange={e => usernameUpdate(e.target.value)}
                                 type="username"
                                 id="username"
                                 className="w-full px-3 py-2 border rounded focus:outline-none border-blue-800 focus:ring focus:ring-blue-300 "
@@ -54,7 +107,7 @@ export default function Login() {
                                 Password <span className="text-red-600">*</span>
                             </label>
                             <input
-                                value={password} onChange={e=>passwordUpdate(e.target.value)}
+                                value={password} onChange={e => passwordUpdate(e.target.value)}
                                 type="password"
                                 id="passwords"
                                 className="w-full px-3 py-2 border rounded border-blue-800 focus:outline-none focus:ring focus:ring-blue-300"

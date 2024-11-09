@@ -1,5 +1,10 @@
 {
-  "users": [],
+  "Users": [
+    {
+      "username": "admin",
+      "password": "P@ssw0rd"
+    }
+  ],
   "Roles": [
     {
       "id": "3",
