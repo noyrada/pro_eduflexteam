@@ -67,7 +67,7 @@ export default function CreateRole({ isOpen, onClose, onSubmit }) {
 
                             <button
                                 type='submit'
-                                // onClick={onsubmit}
+                                //onClick={onsubmit}
                                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 btn btn-success"
                             >
                                 Add Role
