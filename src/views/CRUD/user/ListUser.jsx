@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 // component
 const users = data.Users;
-export default function CreateUser() {
+export default function ListUser() {
   return (
     <>
       <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">

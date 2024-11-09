@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import RoleModal from "../../views/CRUD/role/CreateRole"; // Adjust the path as necessary
+import RoleModal from "../../views/CRUD/role/CreateRole";
 
 export default function CardToolBarRole() {
     const location = useLocation();
