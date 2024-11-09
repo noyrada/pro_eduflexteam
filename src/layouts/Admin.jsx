@@ -15,22 +15,24 @@ import CourseTable from "../views/courses/CourseTable.jsx";
 import CourseAssign from "../views/courses/CourseAssign.jsx";
 import CourseEvent from "../views/courses/CourseEvent.jsx";
 import CourseView from "../views/courses/CourseView.jsx";
+import CreateCourse from "../views/CRUD/course/CreateCourse.jsx";
 
 // Users
 import ListUsers from "../views/CRUD/user/ListUser.jsx";
 import CreateUser from "../views/CRUD/user/CreateUser.jsx";
 import UpdateUser from "../views/CRUD/user/UpdateUser.jsx";
 
+// Roles
 import ListRole from "../views/CRUD/role/ListRole.jsx";
 import CreateRole from "../views/CRUD/role/CreateRole.jsx";
 import UpdateRole from "../views/CRUD/role/UpdateRole.jsx";
 import DeleteRole from "../views/CRUD/role/DeleteRole.jsx";
 
+// Departments
 import ListDepartment from "../views/CRUD/department/ListDepartment.jsx";
 import UpdateDepartment from "../views/CRUD/department/UpdateDepartment.jsx";
-import CreateCourse from "../views/CRUD/course/CreateCourse.jsx";
 
-// Report
+// Reports
 import Report from "../views/admin/reports/Report.jsx";
 
 // Settings
@@ -64,7 +66,6 @@ export default function Admin() {
             <Route path="/courses-assign" element={<CourseAssign />} />
             <Route path="/courses-event" element={<CourseEvent />} />
             <Route path="/courses-view" element={<CourseView />} />
-
             <Route path="/courses-create" element={<CreateCourse />} />
 
             {/* Route for users */}
@@ -72,13 +73,15 @@ export default function Admin() {
             <Route path="/users-create" element={<CreateUser />} />
             <Route path="/users-edit" element={<UpdateUser />} />
 
+            {/* User Roles */}
             <Route path="/users-role" element={<ListRole />} />
             <Route path="/users-role-create" element={<CreateRole />} />
             <Route path="/users-role-edit/:id" element={<UpdateRole />} />
             <Route path="/users-role-delete/:id" element={<DeleteRole />} />
 
+            {/* Department */}
             <Route path="/users-department" element={<ListDepartment />} />
-            <Route path="/users-department-edit/:id"element={<UpdateDepartment />}/>
+            <Route path="/users-department-edit/:id" element={<UpdateDepartment />} />
 
             {/* Reports */}
             <Route path="/reports" element={<Report />} />
@@ -86,7 +89,7 @@ export default function Admin() {
             {/* Settings */}
             <Route path="/setting-page" element={<SettingPage />} />
             <Route path="/setting-role" element={<SettingRole />} />
-            <Route path="/setting-user-management"element={<UserManagement />}/>
+            <Route path="/setting-user-management" element={<UserManagement />} />
 
             {/* Redirect from /admin to /admin/dashboard */}
             <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />
