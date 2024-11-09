@@ -34,21 +34,21 @@ export default function DeleteRole() {
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 z-50 font-sans">
                     <div className="bg-white p-6 rounded-lg w-[25%] mx-4 shadow-lg h-[25%]">
                         
-                        <h3 className="text-lg font-semibold mb-2 text-center">Delete Role</h3>
+                        <h3 className="text-lg mb-2 text-center font-suwannaphum">លុបតួនាទី</h3>
             
                         <form onSubmit={(event) => handleDelete(event)} className="space-y-4">
                           <div>
-                            <h6 className='pt-3'>Are you sure you want to delete this role?</h6>
+                            <h6 className='pt-3 font-suwannaphum text-md'>តើអ្នកប្រាកដថាចង់លុបតួនាទីនេះទេ?</h6>
                           </div>
                           
                           <div className="flex justify-end space-x-2 pt-3">
                             <Link to={'/admin/users-role'}>
-                                <button className='bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400 transition'>
-                                    Cancel
+                                <button className='bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400 transition font-suwannaphum text-md'>
+                                    ថយក្រោយ
                                 </button>
                             </Link>
-                              <button type='submit' className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 btn btn-success">
-                                Delete
+                              <button type='submit' className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 font-suwannaphum text-md">
+                                លុប
                               </button>
                           </div>
                         </form>
