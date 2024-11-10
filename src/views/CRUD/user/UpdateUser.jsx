@@ -38,7 +38,7 @@ export default function UpdateUser() {
       <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
         {/* Breadcrumb */}
         <div className="text-md mb-3">
-          <p>តួនាទី / កែប្រែ</p>
+          <p>អ្នកប្រើប្រាស់ / កែប្រែ</p>
         </div>
 
         {/* Content Area with Cards */}
@@ -126,7 +126,7 @@ export default function UpdateUser() {
                     required
                   />
                 </div>
-               
+
                 <div className="flex justify-end space-x-2">
                   <Link to={"/admin/users"}>
                     <button className="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400 transition">

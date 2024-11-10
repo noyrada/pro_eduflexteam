@@ -13,7 +13,7 @@ export default function CreateDepartment({ isOpen, onClose, onSubmit }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:3000/Department", values)
+      .post("http://localhost:8000/Department", values)
       .then((res) => {
         console.log(res);
         navigate("/admin/users-department");
