@@ -1,38 +1,41 @@
 {
-  "User": [
-    {
-      "username": "admin",
-      "password": "P@ssw0rd"
-    }
-  ],
   "Users": [
     {
       "id": "1",
+      "f_name": "Chhorn",
+      "l_name": "Seyha",
+      "gender": "Male",
+      "password": "Seyha@123",
+      "dob": "11/10/2024",
       "UserName": "Seyha Chhorn",
+      "usertype": "Admin",
       "Status": "Active",
+      "Phone": "09745232312",
+      "Email": "Seyha@gmai.com",
       "Department": "IT",
       "RoleName": "Staff"
     },
     {
-      "id": "2",
-      "UserName": "noyrada",
+      "f_name": "Seyha",
+      "l_name": "Chhorn",
+      "gender": "Male",
+      "password": "1323",
+      "dob": "",
+      "UserName": "Seyha-Test",
+      "usertype": "Admin",
       "Status": "Active",
-      "Department": "HR",
-      "RoleName": "Admin"
-    },
-    {
-      "id": "1",
-      "UserName": "Chea Nika",
-      "Status": "Active",
+      "Phone": "0976459369",
+      "Email": "chhornseyha828@gmail.com",
       "Department": "IT",
-      "RoleName": "Staff"
+      "RoleName": "Staff",
+      "id": "V41XwI8"
     }
   ],
   "Roles": [
     {
       "id": "3",
       "RoleName": "Department Admin",
-      "Description": "The user will have full access to account",
+      "Description": "The user will have full access",
       "TotalUser": "3"
     },
     {
@@ -48,10 +51,10 @@
       "TotalUser": ""
     },
     {
-      "id": "8fc8",
-      "RoleName": "Learner",
-      "Description": "For out of Organization ",
-      "TotalUser": ""
+      "RoleName": "Senior Manager",
+      "Description": "Head of IT",
+      "TotalUser": "",
+      "id": "XDaC_uj"
     }
   ],
   "Department": [
@@ -78,6 +81,11 @@
       "DepartmentName": "Accounting",
       "Description": "Department is dedicated to promoting our brand ...",
       "TotalUser": "30"
+    },
+    {
+      "DepartmentName": "Audit",
+      "Description": "Internal Audit",
+      "id": "W4fShQG"
     }
   ]
 }

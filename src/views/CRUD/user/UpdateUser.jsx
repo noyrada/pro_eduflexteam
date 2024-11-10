@@ -126,7 +126,7 @@ export default function UpdateUser() {
                     required
                   />
                 </div>
-               
+
                 <div className="flex justify-end space-x-2">
                   <Link to={"/admin/users"}>
                     <button className="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400 transition">

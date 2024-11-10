@@ -13,7 +13,7 @@ export default function UpdateDepartment() {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get("http://localhost:3000/Department/" + id)
+      .get("http://localhost:8000/Department/" + id)
       .then((res) => setValues(res.data))
       .catch((err) => console.log(err));
   }, []);

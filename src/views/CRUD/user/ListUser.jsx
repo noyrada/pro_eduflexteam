@@ -47,6 +47,9 @@ export default function ListUser() {
                   <th className="text-left pl-3.5 font-bold text-gray-600 border-b">
                     Edit
                   </th>
+                  <th className="text-left font-bold  text-gray-600 border-b ">
+                    Delete
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -75,6 +78,15 @@ export default function ListUser() {
                           </div>
                         </button>
                       </Link>
+                    </td>
+                    <td className="text-left pr-6 text-2xl border-b text-rose-700">
+                      <button className="text-red-600 hover:text-red-800 mr-2">
+                        <Link to={`/admin/users-delete/${user.id}`}>
+                          <div className="cursor-pointer text-xl">
+                            <ion-icon name="trash-outline"></ion-icon>
+                          </div>
+                        </Link>
+                      </button>
                     </td>
                   </tr>
                 ))}
