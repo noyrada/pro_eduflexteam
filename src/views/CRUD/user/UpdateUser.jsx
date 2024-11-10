@@ -38,7 +38,7 @@ export default function UpdateUser() {
       <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
         {/* Breadcrumb */}
         <div className="text-md mb-3">
-          <p>តួនាទី / កែប្រែ</p>
+          <p>អ្នកប្រើប្រាស់ / កែប្រែ</p>
         </div>
 
         {/* Content Area with Cards */}
