@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import eduflexlogo from "../../assets/images/EduFlex-logo.png";
 
 export default function Login() {
@@ -14,12 +14,12 @@ export default function Login() {
 
     // Validate inputs
     const validateInput = () => {
-        if (!username) {
-            toast.warning("Please enter your username.");
+        if (username===''|| username===null) {
+            alert("Please enter your username.");
             return false;
         }
-        if (!password) {
-            toast.warning("Please enter your password.");
+        if (password===''|| password===null) {
+            alert("Please enter your password.");
             return false;
         }
         return true;
@@ -30,24 +30,22 @@ export default function Login() {
         e.preventDefault();
 
         if (!validateInput()) return;
-
         try {
-            const response = await fetch(`http://localhost:3000/Users/${username}`);
+            const response = await fetch(`http://localhost:3000/User/${username}`);
             if (!response.ok) {
                 throw new Error("User not found"); // Handle 404 errors
             }
 
             const userData = await response.json();
-
+            
             if (userData.password === password) {
-                toast.success("Login successful!");
                 sessionStorage.setItem("username", username);
                 navigate("/");
             } else {
-                toast.error("Incorrect password. Please try again.");
+                alert("Incorrect password. Please try again.");
             }
         } catch (error) {
-            toast.error(`Login failed: ${error.message}`);
+            alert(`Login failed: ${error.message}`);
         }
     };
 
@@ -69,7 +67,7 @@ export default function Login() {
                             onChange={(e) => setUsername(e.target.value)}
                             className="w-full px-3 py-2 border border-blue-800 rounded focus:ring focus:ring-blue-300"
                             placeholder="Enter username or email"
-                            required
+                            
                         />
                     </div>
                     <div className="mb-6">
@@ -83,7 +81,7 @@ export default function Login() {
                             onChange={(e) => setPassword(e.target.value)}
                             className="w-full px-3 py-2 border border-blue-800 rounded focus:ring focus:ring-blue-300"
                             placeholder="Enter password"
-                            required
+                            
                         />
                     </div>
                     <div className="flex justify-center">
