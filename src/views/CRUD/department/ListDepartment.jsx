@@ -1,32 +1,13 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import data from "../../../models/db.json";
 import Checkbox from "@mui/material/Checkbox";
 import CardToolBarDepartment from "../../../components/ToolBar/CardToolBarDepartment";
 import { useParams, Link, useNavigate } from "react-router-dom";
+// import axios from "axios";
 // component
+
 const departments = data.Department;
 export default function Departments() {
-  const [data, setData] = useState([]);
-  const { id } = useParams();
-  const navigate = useNavigate();
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/Department")
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err));
-  }, []);
-  const handleDelete = (id) => {
-    const confirm = window.confirm("Would you like to Delete?");
-    if (confirm) {
-      axios
-        .delete("http://localhost:3000/Department/" + id)
-        .then((res) => {
-          navigate("/admin/users-department");
-        })
-        .catch((err) => console.log(err));
-    }
-  };
   return (
     <>
       <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
@@ -61,46 +42,46 @@ export default function Departments() {
                   <th className="text-left pl-10 py-1 px-4 font-bold text-gray-600 border-b">
                     Total User
                   </th>
-                  <th className="text-left pl-16 py-1 px-4 font-bold text-gray-600 border-b">
-                    Edit
-                  </th>
-                  <th className="text-left font-bold  text-gray-600 border-b ">
-                    Delete
+                  <th className="text-left pl-3.5 font-bold  text-gray-600 border-b ">
+                    Action
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {departments.map((department) => (
-                  <tr key={department.Id}>
+                  <tr key={department.id}>
                     <td className="text-left pl-16 py-1 px-4 text-gray-600 border-b flex">
                       <div className="mr-8 ">
                         <Checkbox />
                       </div>
                       <div className="mt-2.5">{department.DepartmentName}</div>
                     </td>
-                    <td className="text-left pl-16 py-1 px-4 text-gray-600 border-b">
+                    <td className="text-left pl-1 px-4 text-gray-600 border-b">
                       {department.Description}
                     </td>
                     <td className="text-left pl-16 py-1 px-4 text-gray-600 border-b">
                       {department.TotalUser}
                     </td>
-                    <td className="text-left pl-16 py-1 px-4 text-2xl border-b text-blue-800 ">
-                      <Link
-                        to={`/admin/users-department-edit/${department.id}`}
-                      >
-                        <div className="cursor-pointer">
-                          <ion-icon name="create-outline" />
-                        </div>
-                      </Link>
-                    </td>
-                    <td className="text-left pr-6 text-2xl border-b text-rose-700">
-                      <button onClick={(e) => handleDelete(department.id)}>
-                        <div className="cursor-pointer">
-                          <ion-icon
-                            name="trash-outline"
-                            className="cursor-pointer"
-                          ></ion-icon>
-                        </div>
+                    {/* button Edit*/}
+                    <td className="py-3 px-4 border-b ">
+                      <button className="text-blue-600 hover:text-blue-800 mr-2 ">
+                        <Link
+                          to={`/admin/users-department-edit/${department.id}`}
+                        >
+                          <div className="cursor-pointer text-xl">
+                            <ion-icon name="create-outline" />
+                          </div>
+                        </Link>
+                      </button>
+                      {/* Button delete */}
+                      <button className="text-red-600 hover:text-red-800">
+                        <Link
+                          to={`/admin/users-department-delete/${department.id}`}
+                        >
+                          <div className="cursor-pointer text-xl ">
+                            <ion-icon name="trash-outline"></ion-icon>
+                          </div>
+                        </Link>
                       </button>
                     </td>
                   </tr>

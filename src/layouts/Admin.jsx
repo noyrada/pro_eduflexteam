@@ -39,6 +39,7 @@ import Report from "../views/admin/reports/Report.jsx";
 import SettingPage from "../views/manage/SettingPage.jsx";
 import SettingRole from "../views/manage/SettingRole.jsx";
 import UserManagement from "../views/manage/UserManagement.jsx";
+import DeleteDepartment from "../views/CRUD/department/DeleteDepartment.jsx";
 
 export default function Admin() {
   return (
@@ -73,7 +74,6 @@ export default function Admin() {
             <Route path="/users-create" element={<CreateUser />} />
             <Route path="/users-edit/:id" element={<UpdateUser />} />
 
-            {/* User Roles */}
             <Route path="/users-role" element={<ListRole />} />
             <Route path="/users-role-create" element={<CreateRole />} />
             <Route path="/users-role-edit/:id" element={<UpdateRole />} />
@@ -82,6 +82,7 @@ export default function Admin() {
             {/* Department */}
             <Route path="/users-department" element={<ListDepartment />} />
             <Route path="/users-department-edit/:id" element={<UpdateDepartment />} />
+            <Route path="/users-department-delete/:id" element={<DeleteDepartment />}/>
 
             {/* Reports */}
             <Route path="/reports" element={<Report />} />
