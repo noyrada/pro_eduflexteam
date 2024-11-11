@@ -12,7 +12,7 @@ export default function ListUser() {
       <div className="grid grid-rows-[auto,auto,1fr] mx-8 font-suwannaphum text-sm">
         {/* Breadcrumb */}
         <div className="text-md mb-3">
-          <p>ទំព័ដើម / អ្នកប្រើប្រាស់</p>
+          <p>ទំព័រដើម / អ្នកប្រើប្រាស់</p>
         </div>
 
         {/* Tool Bar */}

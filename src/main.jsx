@@ -24,7 +24,7 @@ root.render(
       <Route path="/welcome" element={<HomePage />} />
 
       {/* Redirect to the home page */}
-      <Route path="/" element={<Navigate to="/welcome" />} />
+      <Route path="/" element={<Navigate to="/auth/login" />} />
     </Routes>
   </BrowserRouter>
 );

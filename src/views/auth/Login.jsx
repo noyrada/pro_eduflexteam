@@ -40,7 +40,7 @@ export default function Login() {
             
             if (userData.password === password) {
                 sessionStorage.setItem("username", username);
-                navigate("/");
+                navigate("/welcome");
             } else {
                 alert("Incorrect password. Please try again.");
             }
@@ -51,7 +51,7 @@ export default function Login() {
 
     return (
         <div className="flex justify-center items-center h-screen p-4">
-            <div className="w-full max-w-sm p-6 bg-white rounded-lg shadow-lg">
+            <div className="w-full max-w-sm p-6 bg-white rounded-lg">
                 <div className="flex justify-center mb-6">
                     <img src={eduflexlogo} alt="EduFlex Logo" className="h-24" />
                 </div>
