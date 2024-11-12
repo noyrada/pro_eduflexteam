@@ -36,6 +36,21 @@
       "Department": "IT",
       "RoleName": "Staff",
       "id": "V41XwI8"
+    },
+    {
+      "id": "6bd7",
+      "f_name": "Noy",
+      "l_name": "Rada",
+      "gender": "Male",
+      "password": "123",
+      "dob": "2024-11-12",
+      "UserName": "noyrada",
+      "usertype": "User",
+      "Status": "Active",
+      "Phone": "",
+      "Email": "rada@gmail.com",
+      "Department": "IT",
+      "RoleName": "Learner"
     }
   ],
   "Roles": [

@@ -1,5 +1,7 @@
 import React from "react";
 import ImageP1 from "../../assets/images/ux.jpg";
+import ImageP2 from "../../assets/images/sql.png";
+import ImageP3 from "../../assets/images/react.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdOutlineSignalCellularAlt } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -63,7 +65,7 @@ export default function CardCourses() {
                         </div>
                         <div className="rounded-sm max-h-max">
                         <Image
-                                image={ImageP1}
+                                image={ImageP2}
                                 title="Mastering UX/UI System Design In Figma"
                                 createdDate="April 14, 2024"
                                 level="Expert"
@@ -73,7 +75,7 @@ export default function CardCourses() {
                         </div>
                         <div className="rounded-sm max-h-max">
                             <Image
-                                image={ImageP1}
+                                image={ImageP3}
                                 title="Mastering UX/UI System Design In Figma"
                                 createdDate="April 14, 2024"
                                 level="Expert"

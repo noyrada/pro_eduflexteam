@@ -3,33 +3,36 @@ import React from "react";
 // components
 import CardToolBar from "../../components/Cards/Courses/CardToolBar";
 import PaginationCourse from "../../components/Paginations/PaginationCourse";
-import ImageUx from "../../assets/images/ux.jpg";
-import ImageFigma from "../../assets/images/figma-ios-design-system.jpg";
+import Image1 from "../../assets/images/ux.jpg";
+import Image2 from "../../assets/images/syber.jpeg";
+import Image3 from "../../assets/images/program.png";
+import Image4 from "../../assets/images/react.jpg";
+
 
 const Card = ({ Image }) => {
   return (
-    <div className="bg-white shadow-xl rounded-md">
+    <div className="bg-white shadow-md rounded-lg">
       <img
         src={Image}
         alt="Course Thumbnail"
-        className="rounded-t-md w-full h-80 object-cover"
+        className="rounded-t-lg w-full h-60 object-cover"
       />
       <div className="p-4 mr-3 ml-3">
-        <div className="flex justify-between text-gray-400 text-lg mb-4">
+        <div className="flex justify-between text-gray-400 text-md mb-4">
           <span>2h 14m</span>
           <span>Created: April 14, 2024</span>
         </div>
-        <h3 className="text-blue-600 font-semibold text-xl mt-3 ">
+        <h3 className="text-blue-600 font-semibold text-md mt-3 ">
           Mastering UI-UX Design System in Figma
         </h3>
         <div className="flex items-center space-x-2 mt-4">
-          <div className="w-full bg-gray-200 h-4 rounded-md">
+          <div className="w-full bg-gray-200 h-3 rounded-md">
             <div
-              className="bg-green-500 h-4 rounded-md"
+              className="bg-green-500 h-3 rounded-md"
               style={{ width: "54%" }}
             ></div>
           </div>
-          <span className="text-lg font-semibold text-gray-400">54%</span>
+          <span className="text-md font-semibold text-gray-400">54%</span>
         </div>
       </div>
     </div>
@@ -51,36 +54,36 @@ export default function CourseAssign() {
         </div>
 
         {/* Content Cards */}
-        <div className="bg-white shadow-md rounded-md mt-2">
+        <div className="bg-white shadow-md rounded-md mt-2 font-sans">
           <div className="grid grid-cols-3 gap-6 p-5">
             {/* Card 1 */}
             <div className="rounded-md">
-              <Card Image={ImageUx} />
+              <Card Image={Image1} />
             </div>
 
             {/* Card 2 */}
             <div className="rounded-md">
-              <Card Image={ImageFigma} />
+              <Card Image={Image2} />
             </div>
 
             {/* Card 3 */}
             <div className="rounded-md">
-              <Card Image={ImageUx} />
+              <Card Image={Image3} />
             </div>
 
             {/* Card 4 */}
             <div className="rounded-md">
-              <Card Image={ImageFigma} />
+              <Card Image={Image4} />
             </div>
 
             {/* Card 5 */}
             <div className="bg-gray-200 rounded-md  p-3">
-              <h1>Optional</h1>
+              
             </div>
 
             {/* Card 6 */}
             <div className="bg-gray-200 rounded-md p-3">
-              <h1>Optional</h1>
+              
             </div>
           </div>
         </div>
