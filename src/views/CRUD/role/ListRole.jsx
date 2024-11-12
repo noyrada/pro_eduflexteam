@@ -24,16 +24,16 @@ export default function ListRole() {
                 <div className="bg-white shadow-sm rounded-md mt-2 font-sans">
                     <div >
                         <table className="min-w-full border-collapse">
-                            <thead className="bg-gray-200">
+                            <thead className="bg-gray-200 font-suwannaphum text-md rounded-md font-bold text-blue-900 shadow-sm">
                                 <tr>
-                                    <th className="text-left pl-16 py-1 px-4 font-bold text-gray-600 border-b flex">
+                                    <th className="text-left pl-16 py-1 px-4 border-b flex">
                                         <div className='mr-8'><Checkbox /></div>
-                                        <div className='mt-2.5'>Role Name</div>
+                                        <div className='mt-2.5'>ឈ្មោះតួនាទី</div>
                                         <div className='text-xl mt-2 ml-2'><ion-icon name="arrow-up-outline"></ion-icon></div>
                                     </th>
-                                    <th className="text-left pl-16 py-1 px-4 font-bold  text-gray-600 border-b">Description</th>
-                                    <th className="text-left pl-10 py-1 px-4 font-bold  text-gray-600 border-b">Total User</th>
-                                    <th className="text-left px-4 font-bold  text-gray-600 border-b ">Action</th>
+                                    <th className="text-left pl-16 py-1 px-4 border-b">ពិពណ៌នា</th>
+                                    <th className="text-left pl-10 py-1 px-4 border-b">អ្នកប្រើប្រាស់សុរប</th>
+                                    <th className="text-left px-4 border-b ">សកម្មភាព</th>
                                     
                                 </tr>
                             </thead>

@@ -1,8 +1,8 @@
 {
   "User": [
     {
-      "id":"admin",
-      "name":"Admin",
+      "id": "admin",
+      "name": "Admin",
       "password": "P@ssw0rd"
     }
   ],
@@ -62,6 +62,12 @@
       "Description": "Head of IT",
       "TotalUser": "",
       "id": "XDaC_uj"
+    },
+    {
+      "id": "4bb5",
+      "RoleName": "Supervisor ",
+      "Description": "Role for supervision ",
+      "TotalUser": ""
     }
   ],
   "Department": [

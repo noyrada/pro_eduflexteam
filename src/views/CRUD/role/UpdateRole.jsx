@@ -42,22 +42,21 @@ export default function UpdateRole() {
         <div className="bg-white shadow-sm rounded-md mt-2 font-sans">
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 z-50 font-sans">
             <div className="bg-white p-6 rounded-lg w-[40%] mx-4 shadow-lg h-[50%]">
-              <h3 className="text-lg mb-2 text-center font-suwannaphum">
+              <h3 className="text-md mb-2 text-center font-suwannaphum">
                 កែប្រែតួនាទី
               </h3>
               <form onSubmit={handleUpdate} className="space-y-4">
                 <div>
                   <label
-                    className="block text-gray-700 font-medium mb-1"
+                    className="block text-gray-700 font-suwannaphum text-sm mb-1"
                     htmlFor="roleName"
                   >
-                    Role Name
+                    ឈ្មោះ
                   </label>
                   <input
                     type="text"
                     name="RoleName"
                     className="w-full p-2 border form-control border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    placeholder="Enter role name"
                     value={values.RoleName}
                     onChange={(e) =>
                       setValues({ ...values, RoleName: e.target.value })
@@ -67,16 +66,15 @@ export default function UpdateRole() {
                 </div>
                 <div>
                   <label
-                    className="block text-gray-700 font-medium mb-1"
+                    className="block text-gray-700 font-suwannaphum text-sm mb-1"
                     htmlFor="roleName"
                   >
-                    Description
+                    ពិពណ៌នា
                   </label>
                   <input
-                    type="text"
+                    type="textarea"
                     name="Description"
-                    className="w-full p-2 border border-gray-300 form-control rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    placeholder="Enter description"
+                    className="w-full h-32 p-2 border border-gray-300 form-control rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     value={values.Description}
                     onChange={(e) =>
                       setValues({ ...values, Description: e.target.value })
