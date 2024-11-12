@@ -14,14 +14,14 @@ export default function ToolBarRole() {
                     {/* users */}
                     <Link
                         to="/admin/setting-page"
-                        className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-page") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
+                        className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-page") ? "bg-gray-200 text-blue-900 shadow-md" : "text-gray-700 hover:text-blue-900"}`}
                     >
                         គ្រប់គ្រងទំព័រ
                     </Link>
                     {/* User Roles */}
                     <Link
                         to="/admin/setting-role"
-                        className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-role") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
+                        className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-role") ? "bg-gray-200 text-blue-900 shadow-md" : "text-gray-700 hover:text-blue-900"}`}
                     >
                         តួនាទីនិង ​ការអនុញ្ញាត
                     </Link>
@@ -29,7 +29,7 @@ export default function ToolBarRole() {
                     {/* Department */}
                     <Link
                         to="/admin/setting-user-management"
-                        className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-user-management") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
+                        className={`py-2 px-4 rounded-md block ${isActive("/admin/setting-user-management") ? "bg-gray-200 text-blue-900 shadow-md" : "text-gray-700 hover:text-blue-900"}`}
                     >
                         គ្រប់គ្រងអ្នកប្រើប្រាស់
                     </Link>
@@ -41,7 +41,7 @@ export default function ToolBarRole() {
                     {/* Add New Course */}
                     <Link
                         to="/admin/users-role">
-                        <button className="bg-gray-300 text-gray-900 shadow-md py-2 px-3 rounded-md flex items-center">
+                        <button className="bg-gray-200 text-blue-900 shadow-md py-2 px-3 rounded-md flex items-center">
                             <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
                             បង្កើតថ្មី
                         </button>
