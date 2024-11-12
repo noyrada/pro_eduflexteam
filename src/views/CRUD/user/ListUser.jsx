@@ -24,31 +24,28 @@ export default function ListUser() {
         <div className="bg-white shadow-sm rounded-md mt-2 font-sans">
           <div>
             <table className="min-w-full border-collapse">
-              <thead className="bg-gray-200">
+              <thead className="bg-gray-200 font-suwannaphum text-md text-blue-900">
                 <tr>
-                  <th className="text-left pl-16 py-1 px-4 font-bold text-gray-600 border-b flex">
+                  <th className="text-left pl-16 py-1 px-4 border-b flex">
                     <div className="mr-8">
                       <Checkbox />
                     </div>
-                    <div className="mt-2.5">User Name</div>
+                    <div className="mt-2.5">ឈ្មោះអ្នកប្រើប្រាស់</div>
                     <div className="text-xl mt-2 ml-2">
                       <ion-icon name="arrow-up-outline"></ion-icon>
                     </div>
                   </th>
-                  <th className="text-left pl-10 py-1 px-4 font-bold text-gray-600 border-b">
-                    Department
+                  <th className="text-left pl-10 py-1 px-4 border-b">
+                    ដេប៉ាឌឺម៉ង់
                   </th>
-                  <th className="text-left pl-10 py-1 px-4 font-bold text-gray-600 border-b">
-                    Status
+                  <th className="text-left pl-10 py-1 px-4 border-b">
+                    ស្ថានភាព
                   </th>
-                  <th className="text-left pl-10 py-1 px-4 font-bold text-gray-600 border-b">
-                    Role
+                  <th className="text-left pl-10 py-1 px-4 border-b">
+                    តួនាទី
                   </th>
-                  <th className="text-left pl-3.5 font-bold text-gray-600 border-b">
-                    Edit
-                  </th>
-                  <th className="text-left font-bold  text-gray-600 border-b ">
-                    Delete
+                  <th className="text-center pr-6  border-b ">
+                    សកម្មភាព
                   </th>
                 </tr>
               </thead>
@@ -70,23 +67,20 @@ export default function ListUser() {
                     <td className="text-left pl-10 py-1 px-4 text-gray-600 border-b">
                       {user.RoleName}
                     </td>
-                    <td className="py-3 px-4 border-b">
-                      <Link to={`/admin/users-edit/${user.id}`}>
-                        <button className="text-blue-600 hover:text-blue-800 mr-2">
-                          <div className="cursor-pointer text-xl">
+                    <td className="text-center pr-6 text-lg border-b">
+                      <div className="flex justify-center space-x-6">
+                        <Link to={`/admin/users-edit/${user.id}`}>
+                          <div className="cursor-pointer hover:text-blue-800">
                             <ion-icon name="create-outline" />
                           </div>
-                        </button>
-                      </Link>
-                    </td>
-                    <td className="text-left pr-6 text-2xl border-b text-rose-700">
-                      <button className="text-red-600 hover:text-red-800 mr-2">
+                        </Link>
+
                         <Link to={`/admin/users-delete/${user.id}`}>
-                          <div className="cursor-pointer text-xl">
-                            <ion-icon name="trash-outline"></ion-icon>
+                          <div className="cursor-pointer text-red-600 hover:text-red-800">
+                            <ion-icon name="trash-outline" />
                           </div>
                         </Link>
-                      </button>
+                      </div>
                     </td>
                   </tr>
                 ))}
