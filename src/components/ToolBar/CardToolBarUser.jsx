@@ -29,14 +29,14 @@ export default function CardToolBarUser() {
                     {/* Users */}
                     <Link
                         to="/admin/users"
-                        className={`py-2 px-4 rounded-md block ${isActive("/admin/users") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
+                        className={`py-2 px-4 rounded-md block ${isActive("/admin/users") ? "bg-gray-200 text-blue-900 shadow-md" : "text-gray-700 hover:text-blue-900"}`}
                     >
                         អ្នកប្រើប្រាស់់
                     </Link>
                     {/* User Roles */}
                     <Link
                         to="/admin/users-role"
-                        className={`py-2 px-4 rounded-md block ${isActive("/admin/users-role") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
+                        className={`py-2 px-4 rounded-md block ${isActive("/admin/users-role") ? "bg-gray-200 text-blue-900 shadow-md" : "text-gray-700 hover:text-blue-900"}`}
                     >
                         តួនាទី
                     </Link>
@@ -44,9 +44,9 @@ export default function CardToolBarUser() {
                     {/* Department */}
                     <Link
                         to="/admin/users-department"
-                        className={`py-2 px-4 rounded-md block ${isActive("/admin/users-department") ? "bg-gray-300 text-gray-900 shadow-md" : "text-gray-700 hover:text-blue-800"}`}
+                        className={`py-2 px-4 rounded-md block ${isActive("/admin/users-department") ? "bg-gray-200 text-blue-900 shadow-md" : "text-gray-700 hover:text-blue-900"}`}
                     >
-                        នាយកដ្ឋាន
+                        ដេប៉ាដឺម៉ង់
                     </Link>
                 </div>
 
@@ -55,14 +55,14 @@ export default function CardToolBarUser() {
                     {/* Add New Role Button to open modal */}
                     <button
                         onClick={openModal}
-                        className="bg-gray-300 text-gray-900 shadow-md py-2 px-3 rounded-md flex items-center"
+                        className="bg-gray-200 text-blue-900 shadow-md py-2 px-3 rounded-md flex items-center"
                     >
                         <ion-icon name="add-circle-outline" className="pr-2"></ion-icon>
                         បង្កើតថ្មី
                     </button>
 
                     {/* Filter Button */}
-                    <button className="bg-gray-300 text-gray-900 shadow-md py-2 px-3 rounded-md flex items-center">
+                    <button className="bg-gray-200 text-blue-900 shadow-md py-2 px-3 rounded-md flex items-center">
                         <ion-icon name="filter-outline" className="pr-2"></ion-icon>
                         តម្រង
                     </button>
