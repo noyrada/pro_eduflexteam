@@ -26,30 +26,28 @@ export default function CreateRole({ isOpen, onClose, onSubmit }) {
         <>
             <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 z-50 font-sans">
                 <div className="bg-white p-6 rounded-lg w-[40%] mx-4 shadow-lg h-[50%]">
-                    <h3 className="text-lg mb-4 text-center font-suwannaphum">បង្កើតតួនាទី</h3>
+                    <h3 className="text-md mb-4 text-center font-suwannaphum">បង្កើតតួនាទី</h3>
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <div >
-                            <label className="block text-gray-700 font-medium mb-1" htmlFor="roleName">
-                                Role Name
+                            <label className="block text-gray-700 font-suwannaphum text-sm mb-1" htmlFor="roleName">
+                                ឈ្មោះ
                             </label>
                             <input
                                 type="text"
                                 name='roleName'
                                 className="w-full p-2 border form-control border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                placeholder='Enter role name'
                                 onChange={e => setValues({ ...values, RoleName: e.target.value })}
                                 required
                             />
                         </div>
                         <div>
-                            <label className="block text-gray-700 font-medium mb-1" htmlFor="roleName">
-                                Description
+                            <label className="block text-gray-700 font-suwannaphum text-sm mb-1" htmlFor="roleName">
+                                ពិពណ៌នា
                             </label>
                             <input
-                                type="text"
+                                type="textarea"
                                 name='Description'
-                                className="w-full p-2 border border-gray-300 form-control rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                placeholder='Enter description'
+                                className="w-full h-32 p-2 border border-gray-300 form-control rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                 onChange={e => setValues({ ...values, Description: e.target.value })}
                                 required
                             />

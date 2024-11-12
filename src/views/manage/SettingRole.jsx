@@ -34,18 +34,18 @@ export default function SettingRole() {
                 <div className="bg-white shadow-sm rounded-lg mt-2">
                     <div >
                         <table className="min-w-full border-collapse">
-                            <thead className="bg-gray-200 shadow-sm">
+                            <thead className="bg-gray-200 font-suwannaphum text-md rounded-md font-bold text-blue-900 shadow-sm">
                                 <tr>
-                                    <th className="text-left pl-16 py-1 px-4 font-bold text-gray-600 border-b flex">
+                                    <th className="text-left pl-16 py-1 px-4  border-b flex">
                                         <div className='mr-8'><Checkbox /></div>
-                                        <div className='mt-2.5'>Role Name</div>
+                                        <div className='mt-2.5'>ឈ្មោះតួនាទី</div>
                                         <div className='text-lg mt-2 ml-2'><ion-icon name="arrow-up-outline"></ion-icon></div>
                                     </th>
-                                    <th className="text-left pl-16 py-1 px-4 font-bold  text-gray-600 border-b">
-                                        Description
+                                    <th className="text-left pl-16 py-1 px-4  border-b">
+                                        ពិពណ៌នា
                                     </th>
-                                    <th className="text-center pr-6 font-bold  text-gray-600 border-b ">
-                                        Action
+                                    <th className="text-center pr-6  border-b ">
+                                        សកម្មភាព
                                     </th>
                                 </tr>
                             </thead>
