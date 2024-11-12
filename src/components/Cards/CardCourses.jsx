@@ -1,6 +1,6 @@
 import React from "react";
 import ImageP1 from "../../assets/images/ux.jpg";
-import ImageP2 from "../../assets/images/sql.png";
+import ImageP2 from "../../assets/images/syber.jpeg";
 import ImageP3 from "../../assets/images/react.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdOutlineSignalCellularAlt } from "react-icons/md";
@@ -11,11 +11,11 @@ import { Link } from "react-router-dom";
 function Image({ image, title, createdDate, level, duration, price }) {
     return (
         <div class=" border rounded-xl cursor-pointer m-4 marker:shadow-md hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out">
-            <img className="rounded-xl h-w-160 w-full" src={image} alt={title} />
+            <img className="rounded-xl h-60 w-full" src={image} alt={title} />
             <div className="ml-4">
                 <div className="flex mt-2 ">
                     <MdOutlineSignalCellularAlt className="fill-green-600 size-6" />
-                    <div className="flex justify-between w-full mr-8 ml-2 ">
+                    <div className="flex justify-between w-full mr-8 ml-2">
                         <p className="text-gray-600">{level}</p>
                         <p className="text-gray-600">{duration}</p>
                         <p className="text-gray-600">{price}</p>
