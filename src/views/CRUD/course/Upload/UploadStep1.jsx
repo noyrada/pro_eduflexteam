@@ -39,7 +39,7 @@ export default function CreateNewCourse() {
                         </label>
                         <input
                             type="text"
-                            placeholder="Graphic Design Bootcamp: Photoshop, Illustrator, InDesign"
+                            placeholder=""
                             className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-indigo-100"
                         />
                     </div>
@@ -51,7 +51,7 @@ export default function CreateNewCourse() {
                         </label>
                         <input
                             type="text"
-                            placeholder="Interactive platform for learning"
+                            placeholder="Course Subtitle"
                             className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-indigo-100"
                         />
                     </div>
@@ -88,31 +88,21 @@ export default function CreateNewCourse() {
                         </div>
                         <div>
                             <label className="flex text-sm font-semibold mb-1 items-center">
-                                <FaDollarSign className="mr-2 text-indigo-600" /> Price
+                                Head Department
                             </label>
                             <input
-                                type="number"
-                                placeholder="$250.00"
+                                type="text"
+                                placeholder="Head Department"
                                 className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-indigo-100"
                             />
                         </div>
-                    </div>
-
-                    {/* Instructor */}
-                    <div className="mb-4">
-                        <label className="flex text-sm font-semibold mb-1">Instructor</label>
-                        <input
-                            type="text"
-                            placeholder="Rakib Ahmed"
-                            className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-indigo-100"
-                        />
                     </div>
 
                     {/* Course Description */}
                     <div className="mb-4">
                         <label className="flex text-sm font-semibold mb-1">Course Description</label>
                         <textarea
-                            placeholder="Describe your course..."
+                            placeholder="Course Description"
                             className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-indigo-100 h-24"
                         />
                     </div>
@@ -122,13 +112,8 @@ export default function CreateNewCourse() {
                         <label className="flex text-sm font-semibold mb-1">What Students Will Learn?</label>
                         <input
                             type="text"
-                            placeholder="Learn Figma Basic to Advanced Design"
+                            placeholder="Type here..."
                             className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-indigo-100 mb-2"
-                        />
-                        <input
-                            type="text"
-                            placeholder="Build & test a full website design"
-                            className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-indigo-100"
                         />
                     </div>
 
