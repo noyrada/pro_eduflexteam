@@ -42,7 +42,7 @@ export default function ProfileMenu() {
                             <Link>
                                 <p>{item.label3}</p>
                             </Link>
-                            <Link to="">
+                            <Link to="/auth/logout">
                                 <p>{item.label4}</p>
                             </Link>
                         </Typography>
