@@ -3,7 +3,8 @@ import Flag from "../../assets/images/Khmer_language.png";
 import User from "../../assets/images/profile-rada.jpg";
 import { Search, Bell, ChevronDown } from "lucide-react";
 
-// component
+// views
+import ProfileMenu from "../../views/profiles/ProfileMenu";
 
 export default function Navbar() {
     return (
@@ -47,19 +48,8 @@ export default function Navbar() {
 
                         {/* User profile */}
                         <li>
-                            <button className="cursor-pointer text-white p-0">
-                                <img
-                                    src={User}
-                                    alt="user"
-                                    className="h-10 w-10 rounded-full border"
-                                />
-                            </button>
-                        </li>
-
-                        {/* <UserDropdown /> */}
-                        <li>
-                            <button className="cursor-pointer text-gray-600 p-1">
-                                <ChevronDown className="h-6 w-6" />
+                            <button className="cursor-pointer">
+                            <ProfileMenu />
                             </button>
                         </li>
                     </ul>
