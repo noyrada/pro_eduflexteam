@@ -36,7 +36,7 @@ export default function ProfileMenu() {
                             <Link to="/admin/user-profile">
                                 <p>{item.label1}</p>
                             </Link>
-                            <Link to="">
+                            <Link to="/admin/user-profile-edit">
                                 <p>{item.label2}</p>
                             </Link>
                             <Link>

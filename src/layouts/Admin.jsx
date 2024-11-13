@@ -41,7 +41,10 @@ import SettingPage from "../views/manage/SettingPage.jsx";
 import SettingRole from "../views/manage/SettingRole.jsx";
 import UserManagement from "../views/manage/UserManagement.jsx";
 import DeleteDepartment from "../views/CRUD/department/DeleteDepartment.jsx";
+
+// Profiles
 import UserProfile from "../views/profiles/UserProfile.jsx";
+import EditUserProfile from "../views/profiles/EditUserProfile.jsx";
 
 export default function Admin() {
   return (
@@ -79,6 +82,7 @@ export default function Admin() {
 
             {/* Profile */}
             <Route path="/user-profile" element={<UserProfile />} />
+            <Route path="/user-profile-edit" element={<EditUserProfile />} />
 
             <Route path="/users-role" element={<ListRole />} />
             <Route path="/users-role-create" element={<CreateRole />} />
