@@ -33,7 +33,7 @@ export default function ProfileMenu() {
                     <MenuItem key={index} className="flex items-center gap-2 p-2 rounded-lg hover:bg-blue-100 transition-all">
                         {item.icon}
                         <Typography variant="small" className=" text-gray-600 hover:text-blue-900 px-3">
-                            <Link to="">
+                            <Link to="/admin/user-profile">
                                 <p>{item.label1}</p>
                             </Link>
                             <Link to="">
