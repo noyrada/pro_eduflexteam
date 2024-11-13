@@ -15,7 +15,7 @@ import CourseTable from "../views/courses/CourseTable.jsx";
 import CourseAssign from "../views/courses/CourseAssign.jsx";
 import CourseEvent from "../views/courses/CourseEvent.jsx";
 import CourseView from "../views/courses/CourseView.jsx";
-import CreateCourse from "../views/CRUD/course/CreateCourse.jsx";
+//import CreateCourse from "../views/CRUD/course/CreateCourse.jsx";
 
 // Users
 import ListUsers from "../views/CRUD/user/ListUser.jsx";
